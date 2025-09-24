@@ -39,18 +39,24 @@ def get_config():
 
 COURSE_SCHEDULE = {
     "Pazartesi": [
-        {"name": "Yönetim Bilişim Sistemlerine Giriş", "time": "10:00", "location": "Uygulamalı Bilimler Fak. (UBF) - Amfi 1", "instructor": "Doç. Dr. Alev ATEŞ"},
-        {"name": "Bilgisayar Programlama I", "time": "14:00", "location": "UBF - Bilgisayar Lab. 1", "instructor": "Dr. Öğr. Üyesi Burcu YILMAZ"}
-    ], "Salı": [
-        {"name": "Sistem Analizi ve Tasarımı", "time": "09:00", "location": "UBF - D201", "instructor": "Prof. Dr. Cihan ÇETİNKAYA"},
-        {"name": "İşletme Yönetimi", "time": "13:00", "location": "UBF - D105", "instructor": "Dr. Öğr. Üyesi Selin GÜNER"}
-    ], "Çarşamba": [
-        {"name": "Veritabanı Yönetim Sistemleri", "time": "11:00", "location": "UBF - Bilgisayar Lab. 2", "instructor": "Dr. Öğr. Üyesi Burcu YILMAZ"},
-    ], "Perşembe": [
-        {"name": "Sistem Analizi ve Tasarımı", "time": "09:00", "location": "UBF - D201", "instructor": "Prof. Dr. Cihan ÇETİNKAYA"},
-        {"name": "Müşteri İlişkileri Yönetimi (CRM)", "time": "14:00", "location": "UBF - D303", "instructor": "Doç. Dr. Alev ATEŞ"}
-    ], "Cuma": [
-        {"name": "Bilgisayar Programlama I", "time": "10:00", "location": "UBF - Bilgisayar Lab. 1", "instructor": "Dr. Öğr. Üyesi Burcu YILMAZ"}
+        {"name": "Yönetim Bilişim Sistemlerine Giriş", "time": "09:00", "location": "UBF - Amfi 1", "instructor": "Doç. Dr. Alev ATEŞ"},
+        {"name": "Bilgisayar Programlama I", "time": "13:00", "location": "UBF - Bilgisayar Lab. 1", "instructor": "Dr. Öğr. Üyesi Burcu YILMAZ"}
+    ],
+    "Salı": [
+        {"name": "İstatistik", "time": "10:00", "location": "UBF - D201", "instructor": "Dr. Öğr. Üyesi Selin GÜNER"},
+        {"name": "İşletme Yönetimi", "time": "14:00", "location": "UBF - D105", "instructor": "Prof. Dr. Cihan ÇETİNKAYA"}
+    ],
+    "Çarşamba": [
+        {"name": "Veritabanı Yönetim Sistemleri", "time": "09:00", "location": "UBF - Bilgisayar Lab. 2", "instructor": "Dr. Öğr. Üyesi Burcu YILMAZ"},
+        {"name": "Web Programlama", "time": "13:00", "location": "UBF - Bilgisayar Lab. 3", "instructor": "Dr. Öğr. Üyesi Ahmet DEMİR"}
+    ],
+    "Perşembe": [
+        {"name": "Sistem Analizi ve Tasarımı", "time": "10:00", "location": "UBF - D201", "instructor": "Doç. Dr. Alev ATEŞ"},
+        {"name": "Ağ ve Bilgi Güvenliği", "time": "14:00", "location": "UBF - D303", "instructor": "Dr. Öğr. Üyesi Zeynep KAYA"}
+    ],
+    "Cuma": [
+        {"name": "Yazılım Mühendisliği", "time": "09:00", "location": "UBF - Amfi 2", "instructor": "Prof. Dr. Cihan ÇETİNKAYA"},
+        {"name": "Proje Yönetimi", "time": "13:00", "location": "UBF - D105", "instructor": "Dr. Öğr. Üyesi Selin GÜNER"}
     ]
 }
 
@@ -167,10 +173,16 @@ def get_student_clubs(query: str = None) -> str:
     return json.dumps(STUDENT_CLUBS, ensure_ascii=False)
 
 def get_course_schedule(day: str = None) -> str:
+    # Gün bilgisi ekle: Eğer day "bugün" ise, bugünkü haftanın gününü otomatik bul
     if day:
         normalized_day = day.capitalize()
+        if normalized_day == "Bugün":
+            weekday_map = {0: "Pazartesi", 1: "Salı", 2: "Çarşamba", 3: "Perşembe", 4: "Cuma", 5: "Cumartesi", 6: "Pazar"}
+            today = datetime.now().weekday()
+            normalized_day = weekday_map.get(today, "Pazartesi")
         schedule_for_day = COURSE_SCHEDULE.get(normalized_day)
-        if schedule_for_day: return json.dumps({normalized_day: schedule_for_day}, ensure_ascii=False)
+        if schedule_for_day:
+            return json.dumps({normalized_day: schedule_for_day}, ensure_ascii=False)
         return json.dumps({"error": f"'{day}' için ders programı bulunamadı."}, ensure_ascii=False)
     return json.dumps(COURSE_SCHEDULE, ensure_ascii=False)
 
@@ -254,7 +266,11 @@ class CampusAssistant:
             tool_calls = response_message.tool_calls
 
             if tool_calls:
-                self.conversation_history.append(response_message)
+                self.conversation_history.append({
+                    "role": response_message.role,
+                    "content": response_message.content if response_message.content is not None else "",
+                    "tool_calls": [tc.to_dict() for tc in tool_calls] if tool_calls else []
+                })
                 action_data = {}
                 weather_data_for_suggestion = None
 
@@ -278,10 +294,20 @@ class CampusAssistant:
                 if weather_data_for_suggestion:
                     suggestion_str = get_clothing_suggestion(weather_data_for_suggestion['condition'], weather_data_for_suggestion['temperature'])
                     self.conversation_history.append({
-                        "role": "assistant", "content": None,
-                        "tool_calls": [{"id": "call_clothing_suggestion", "type": "function", "function": {"name": "get_clothing_suggestion", "arguments": json.dumps(weather_data_for_suggestion)}}]
+                        "role": "assistant",
+                        "content": "",
+                        "tool_calls": [{
+                            "id": "call_clothing_suggestion",
+                            "type": "function",
+                            "function": {"name": "get_clothing_suggestion", "arguments": json.dumps(weather_data_for_suggestion)}
+                        }]
                     })
                     self.conversation_history.append({"tool_call_id": "call_clothing_suggestion", "role": "tool", "name": "get_clothing_suggestion", "content": suggestion_str})
+
+                # Düzeltme: messages listesindeki tüm 'content' alanları string olmalı, None olmamalı
+                for msg in self.conversation_history:
+                    if isinstance(msg, dict) and "content" in msg and msg["content"] is None:
+                        msg["content"] = ""
 
                 second_response = self.client.chat.completions.create(model=self.config['model_name'], messages=self.conversation_history)
                 final_answer = second_response.choices[0].message.content
