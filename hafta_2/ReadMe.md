@@ -87,14 +87,16 @@ Bu asistan, LLM'in doğal dil anlama gücünü, `Function Calling` ile kazandı�
 * **🎉 Etkinlik ve Duyuru Takibi:** Kampüsteki konser, seminer veya spor etkinlikleri hakkında bilgi verir, hiçbir sosyal aktiviteyi kaçırmamanızı sağlar.
 * **🧭 Kampüs Navigasyonu:** "Kütüphane nerede?" veya "Mühendislik fakültesine en kısa yol hangisi?" gibi sorular için yönlendirme yapar.
 
-### Teknik Mimari
+## 🛠️ Kullanılan Teknolojiler
 
-Proje, modüler ve anlaşılır bir yapıda 3 ana dosyadan oluşur:
-1.  **`main.py`:** Uygulamanın beyni. Kullanıcı girdilerini alır, konuşma geçmişini yönetir ve LLM ile iletişimi kurarak hangi aracın kullanılacağına karar verir.
-2.  **`tools.py`:** Asistanın "alet çantası". Akademik takvimi sorgulama, ders programını getirme gibi tüm özel yetenekler (fonksiyonlar) burada tanımlanmıştır.
-3.  **`config.py`:** Projenin ayar dosyası. API anahtarları, prompt şablonları gibi yapılandırma verilerini merkezi bir yerden yönetir.
-
-Bu proje, bir LLM'in nasıl belirli bir alanda (kampüs yönetimi) uzmanlaştırılabileceğini ve gerçek dünya problemlerine pratik çözümler sunabileceğini kanıtlamaktadır.
+| Kategori         | Teknoloji                |
+|------------------|--------------------------|
+| **Dil**          | Python 3.10+             |
+| **Web Framework**| Flask                    |
+| **Yapay Zeka**   | OpenAI API (gpt-4-turbo) |
+| **API İstemcisi**| openai Python Kütüphanesi|
+| **Konfigürasyon**| python-dotenv            |
+| **Arayüz**       | HTML5, CSS3, JavaScript  |
 
 ---
 
