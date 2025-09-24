@@ -4,7 +4,7 @@
 ---
 
 ## 📜 Proje Hakkında
-**BANÜ MIS CONNECT**, Bandırma Onyedi Eylül Üniversitesi (BANÜ) Yönetim Bilişim Sistemleri (YBS) öğrencilerinin akademik, sosyal ve kişisel süreçlerini desteklemek amacıyla **LLM tabanlı fonksiyonlarla geliştirilmiş yapay zeka destekli etkileşim odaklı bir web platformudur**  
+**BANÜ MIS CONNECT**, Bandırma Onyedi Eylül Üniversitesi (BANÜ) Yönetim Bilişim Sistemleri (YBS) öğrencilerinin akademik, sosyal ve kişisel süreçlerini desteklemek amacıyla **Kalıtım (Inheritance) ile Genişletilebilir Chatbot** web arayüzü projesidir. 
 
 Proje, öğrencilerin kampüs hayatıyla ilgili dağınık bilgilere (ders programları, akademik takvim, etkinlikler, kampüs mekanları vb.) **tek bir arayüzden, doğal dil sorgularıyla anında erişimini** sağlamayı hedefler.  
 
