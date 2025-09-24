@@ -1,4 +1,4 @@
-# 🚀 BANÜ MIS CONNECT: Akıllı YBS Asistanı  
+# 🚀 BANÜ MIS CONNECT: SMART MIS ASSISTANT
 *Bandırma Onyedi Eylül Üniversitesi Yönetim Bilişim Sistemleri öğrencileri için tasarlanmış, yapay zeka destekli akıllı kampüs asistanı.*
 
 ---
