@@ -72,7 +72,7 @@ Bu haftanın modülleri, temelden karmaşığa doğru, birbiri üzerine inşa ed
 
 ---
 
-## 🏆 Haftanın Projesi: Akıllı Kampüs Asistanı
+## 🏆 Haftanın Projesi: BANÜ MIS CONNECT: SMART MIS ASSISTANT
 
 Bu proje, 2. hafta boyunca öğrenilen tüm teorik bilgilerin ve teknik becerilerin birleştiği, **uçtan uca bir LLM uygulamasının** somut bir prototipidir.
 
