@@ -1,7 +1,6 @@
 <div align="center">
 
-# 🚀 Build with LLMs Bootcamp: Bir Akademisyenin Geliştirme Portfolyosu
-
+# 🚀  **Build with LLMs Bootcamp**
 **Büyük Dil Modelleri ile Fikirden Üretime Uçtan Uca Sistem Mimarisi**
 
 </div>
