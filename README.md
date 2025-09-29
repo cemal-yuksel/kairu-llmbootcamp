@@ -180,13 +180,20 @@
 
 ```bash
 .
-├── hafta_1/                # Modül 1: LLM Temelleri
-│   ├── notebooks/
-│   └── README.md
-├── hafta_2/                # Modül 2: Prompt Engineering
-│   ├── notebooks/
-│   └── README.md
+├── hafta_1/
+│   ├── microsoft.py
+│   ├── qwen.py
+│   └── turkish_simple.py
+│
+├── hafta_2/
+│   ├── 01-04_prompt... .ipynb
+│   ├── 05_chatcompletion_api.py
+│   ├── ... (diğer scriptler)
+│   ├── 09_web_chatbot.py
+│   └── weekly_assignment/
+│       └── app.py
+│
 ├── ... (diğer haftalar)
-├── hafta_8/
-├── LICENSE                 # MIT Lisansı
-└── README.md               # Bu ana döküman
+│
+├── LICENSE
+└── README.md
