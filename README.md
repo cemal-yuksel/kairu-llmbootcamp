@@ -1,7 +1,7 @@
 # Build with LLMs Bootcamp 🚀
 
 ![Bootcamp Durumu](https://img.shields.io/badge/Durum-Devam%20Ediyor-green)
-![Hafta](https://img.shields.io/badge/Mevcut%20Hafta-2/8-blueviolet)
+![Hafta](https://img.shields.io/badge/Mevcut%20Hafta-3/8-blueviolet)
 ![Organizasyon](https://img.shields.io/badge/Organizasyon-Kairu-blue)
 
 > Bu repo, **Kairu** tarafından düzenlenen **Build with LLMs Bootcamp** programı süresince kişisel öğrenme yolculuğumu, haftalık ilerlememi ve projelerimi belgelemek amacıyla oluşturulmuş canlı bir arşivdir.
