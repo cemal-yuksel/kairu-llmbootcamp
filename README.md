@@ -1,204 +1,192 @@
-# Build with LLMs Bootcamp 🚀
+<div align="center">
 
-![Bootcamp Durumu](https://img.shields.io/badge/Durum-Devam%20Ediyor-green)
-![Hafta](https://img.shields.io/badge/Mevcut%20Hafta-3/8-blueviolet)
-![Organizasyon](https://img.shields.io/badge/Organizasyon-Kairu-blue)
+# 🚀 Build with LLMs Bootcamp: Bir Akademisyenin Geliştirme Portfolyosu
 
-> Bu repo, **Kairu** tarafından düzenlenen **Build with LLMs Bootcamp** programı süresince kişisel öğrenme yolculuğumu, haftalık ilerlememi ve projelerimi belgelemek amacıyla oluşturulmuş canlı bir arşivdir.
+**Büyük Dil Modelleri ile Fikirden Üretime Uçtan Uca Sistem Mimarisi**
 
-Bu 8 haftalık yoğun program, Büyük Dil Modelleri (LLM) ile modern, üretim seviyesinde (production-ready) uygulamalar geliştirmek için gereken kuramsal temelleri ve pratik becerileri bir araya getirmeyi hedeflemektedir.
+</div>
 
-## 🎯 Projenin Amacı ve Akademik Perspektif
+<div align="center">
 
-Bir **akademisyen** olarak bu bootcamp'e katılım amacım, yalnızca en son teknolojileri ve araçları öğrenmek değil, aynı zamanda bu süreci metodik bir şekilde belgelemektir. Bu repo, teorik bilgilerin pratik uygulamalarla nasıl birleştiğini gösteren, eleştirel analizler ve yansımalar içeren bir **"dijital öğrenme portfolyosu"** niteliği taşımaktadır. Temel hedeflerim:
+[![Organizasyon](https://img.shields.io/badge/Organizasyon-Kairu-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/company/kairu/)
+[![Durum](https://img.shields.io/badge/Durum-Aktif-brightgreen?style=for-the-badge)](./)
+[![Hafta](https://img.shields.io/badge/İlerleme-3/8-blueviolet?style=for-the-badge)](./)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Ecosystem-FFD21E?style=for-the-badge)](https://huggingface.co/)
+[![LangChain](https://img.shields.io/badge/LangChain-Framework-8A2BE2?style=for-the-badge)](https://www.langchain.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-API-10A37F?style=for-the-badge&logo=openai&logoColor=white)](https://beta.openai.com/docs/)
 
-* **Teori ve Pratik Arasında Köprü Kurmak:** LLM'lerin arkasındaki teorik mimariyi (Transformer, Attention vb.) anlamak ve bu bilgiyi kodlama pratiğine dökmek.
-* **Yansıtıcı Öğrenme Kaydı:** Her modül sonunda karşılaşılan zorlukları, öğrenilen dersleri ve gelecekteki potansiyel araştırma alanlarını belgelemek.
-* **Açık Bilim ve Paylaşım:** Öğrenme sürecimi şeffaf bir şekilde paylaşarak benzer yolda ilerleyenlere bir kaynak oluşturmak.
+</div>
 
----
+> **Projenin Felsefesi ve Metodolojisi:** Bu repo, Kairu'nun "Build with LLMs" bootcamp'i süresince edindiğim bilgi ve tecrübeleri belgeleyen canlı bir arşivdir. Bir akademisyen olarak amacım, yalnızca LLM teknolojilerini uygulamak değil, aynı zamanda bu süreci **metodik, yansıtıcı ve tekrarlanabilir** bir yaklaşımla dökümante etmektir. Bu portfolyo, teorik temellerin (örn: Transformer Mimarisi) pratik mühendislik disiplinleriyle (örn: RAG, Fine-Tuning, MLOps) nasıl kesiştiğini gösteren bir vaka analizidir.
 
-## 📍 İçindekiler
-
-* [Haftalık İlerleme Takibi](#-haftalık-İlerleme-takibi)
-* [📚 Program İçeriği ve Modüller](#-program-İçeriği-ve-modüller)
-* [🛠️ Teknoloji Yığını ve Araçlar](#️-teknoloji-yığını-ve-araçlar)
-* [🏆 Kazanılacak Yetkinlikler](#-kazanılacak-yetkinlikler)
-* [🧭 Reponun Yapısı](#-reponun-yapısı)
-* [🔗 İletişim ve Bağlantılar](#-İletişim-ve-bağlantılar)
-* [📝 Lisans](#-lisans)
+### Temel Metodolojik Hedefler:
+-   🧠 **Teori-Pratik Sentezi:** LLM'lerin arkasındaki matematiksel ve mimari temelleri, üretim seviyesi kodlama pratiklerine dönüştürmek.
+-   ✍️ **Yansıtıcı Öğrenme Günlüğü:** Her modülde karşılaşılan mühendislik zorluklarını (trade-offs), öğrenilen dersleri ve potansiyel araştırma alanlarını sistematik olarak belgelemek.
+-   🌐 **Açık Bilim ve Bilgi Paylaşımı:** Öğrenme sürecini şeffaf bir şekilde paylaşarak, LLM alanında ilerleyen diğer profesyoneller ve akademisyenler için bir kaynak oluşturmak.
 
 ---
 
-## 🗓️ Haftalık İlerleme Takibi
+## 🗓️ Haftalık İlerleme ve Modül Yol Haritası
 
-| Hafta | Modül Konusu                                            | Durum     | Klasör                                         |
-| :---- | :------------------------------------------------------ | :-------- | :--------------------------------------------- |
-| **1** | LLM Temelleri ve Python ile NLP’ye Giriş                | ✅ Tamamlandı | [hafta_1/](./hafta_1/)                         |
-| **2** | Prompt Engineering ve API Tabanlı Kullanım              | ✅ Tamamlandı | [hafta_2/](./hafta_2/)                         |
-| **3** | Hugging Face Transformers Derinlemesine                 | ⏳ Devam Ediyor | [hafta_3/](./hafta_3/)                         |
-| **4** | Embedding, Vektör Veritabanları ve Anlamsal Arama       | 🔜 Başlanacak | [hafta_4/](./hafta_4/)                         |
-| **5** | LangChain ile Çok Adımlı Uygulama Geliştirme            | 🔜 Başlanacak | [hafta_5/](./hafta_5/)                         |
-| **6** | Fine-Tuning ve Hafif Model Eğitimi (LoRA, QLoRA)        | 🔜 Başlanacak | [hafta_6/](./hafta_6/)                         |
-| **7** | LLM Tabanlı Uygulama Dağıtımı (Deployment)              | 🔜 Başlanacak | [hafta_7/](./hafta_7/)                         |
-| **8** | LLM Protokolleri ile Kurumsal Sistem Mimarisi          | 🔜 Başlanacak | [hafta_8/](./hafta_8/)                         |
+| Hafta | Modül Konusu | Durum | Klasör & Bulgular |
+| :---- | :--- | :---: | :--- |
+| **1** | LLM Temelleri ve Python ile NLP’ye Giriş | ✅ Tamamlandı | [hafta_1/](./hafta_1/) |
+| **2** | Prompt Engineering ve API Tabanlı Kullanım | ✅ Tamamlandı | [hafta_2/](./hafta_2/) |
+| **3** | Hugging Face Transformers Derinlemesine | ➡️ Devam Ediyor | [hafta_3/](./hafta_3/) |
+| **4** | Embedding, Vektör Veritabanları ve Anlamsal Arama | 🔜 Başlanacak | [hafta_4/](./hafta_4/) |
+| **5** | LangChain ile Çok Adımlı Uygulama Geliştirme | 🔜 Başlanacak | [hafta_5/](./hafta_5/) |
+| **6** | Fine-Tuning ve Hafif Model Eğitimi (LoRA, QLoRA) | 🔜 Başlanacak | [hafta_6/](./hafta_6/) |
+| **7** | LLM Tabanlı Uygulama Dağıtımı (Deployment) | 🔜 Başlanacak | [hafta_7/](./hafta_7/) |
+| **8** | LLM Protokolleri ile Kurumsal Sistem Mimarisi | 🔜 Başlanacak | [hafta_8/](./hafta_8/) |
 
 ---
 
-## 📚 Program İçeriği ve Modüller
-
-Programın 8 haftalık detaylı içeriği aşağıda sunulmuştur. Detayları görmek için başlıklara tıklayınız.
+## 📚 Program Müfredatı ve Teknik Derinlik
 
 <details>
-<summary><strong>Modül 1: LLM Temelleri ve Python ile NLP’ye Giriş (1 Hafta)</strong></summary>
+<summary><strong>🧠 Modül 1: LLM Temelleri ve Python ile NLP’ye Giriş</strong></summary>
 
-* **Konular:**
-    * Büyük Dil Modelleri (LLM) nedir ve nasıl çalışır?
-    * NLP temel kavramları ve Python ile pratik uygulamalar
-    * Tokenization, encoding/decoding süreçleri
-    * Transformer mimarisinin temelleri (Self-Attention, Encoder-Decoder)
-    * Hugging Face ekosistemine giriş (Transformers, Datasets, Tokenizers)
-* **Pratik Projeler:**
-    * Metin ön işleme (text preprocessing) pipeline'ı oluşturma
-    * Hugging Face `pipeline` fonksiyonu ile temel NLP görevleri (sentiment analysis, text generation)
+#### Konular:
+-   **Teorik Altyapı:** LLM nedir? Transformer mimarisinin anatomisi (Self-Attention, Encoder-Decoder).
+-   **Teknik Süreçler:** Tokenization, encoding/decoding, vocabulary yönetimi.
+-   **Ekosistem:** Hugging Face ekosistemine giriş (`Transformers`, `Datasets`, `Tokenizers`).
+#### Pratik Çıktılar:
+-   💻 Metin ön işleme (text preprocessing) pipeline'ı geliştirme.
+-   🚀 Hugging Face `pipeline` fonksiyonu ile sıfır kodla temel NLP görevlerini (sentiment analysis, text generation) gerçekleştirme.
+-   **🎯 Haftanın Ana Kazanımı:** LLM'lerin temel çalışma prensiplerini ve Hugging Face ekosistemini kullanarak hızlı prototipleme yeteneği.
 </details>
 
 <details>
-<summary><strong>Modül 2: Prompt Engineering ve API Tabanlı Kullanım (1 Hafta)</strong></summary>
+<summary><strong>✍️ Modül 2: Prompt Engineering ve API Tabanlı Kullanım</strong></summary>
 
-* **Konular:**
-    * Prompt mühendisliği temelleri: Zero-shot, Few-shot, Chain-of-Thought (CoT)
-    * Gelişmiş teknikler: Rol tabanlı (Role-based) prompt yazımı, ReAct
-    * OpenAI API derinlemesine inceleme (`ChatCompletion`, `Function Calling`)
-    * Prompt optimizasyon stratejileri ve maliyet yönetimi
-    * API güvenliği, rate limiting ve en iyi pratikler
-* **Pratik Projeler:**
-    * Harici araçları kullanabilen akıllı bir chatbot sistemi
-    * `Function Calling` ile yapılandırılmış veri üreten uygulamalar
+#### Konular:
+-   **Prompt Stratejileri:** Zero-shot, Few-shot, Chain-of-Thought (CoT), Role-based prompting.
+-   **Gelişmiş Teknikler:** ReAct (Reason+Act) paradigması.
+-   **API Entegrasyonu:** OpenAI API (`ChatCompletion`), `Function Calling` ile harici sistem entegrasyonu.
+-   **Optimizasyon:** Maliyet yönetimi, rate limiting ve güvenlik pratikleri.
+#### Pratik Çıktılar:
+-   🤖 Harici araçları (API, veritabanı vb.) kullanabilen akıllı bir chatbot sistemi prototipleme.
+-    structured_data `Function Calling` ile yapılandırılmış JSON üreten ve işleyen uygulamalar geliştirme.
+-   **🎯 Haftanın Ana Kazanımı:** LLM'leri harici sistemlerle konuşturan ve onlara "eylem" yeteneği kazandıran `prompt` ve `API` stratejilerine hakimiyet.
 </details>
 
 <details>
-<summary><strong>Modül 3: Hugging Face Transformers Derinlemesine (1 Hafta)</strong></summary>
+<summary><strong>🤗 Modül 3: Hugging Face Transformers Derinlemesine</strong></summary>
 
-* **Konular:**
-    * `Transformers` kütüphanesinin detaylı kullanımı (`AutoModel`, `AutoTokenizer`)
-    * Önceden eğitilmiş (pre-trained) modellerin yüklenmesi, kullanılması ve adaptasyonu
-    * Pipeline'lar ve özel görev (custom task) tanımlama
-    * Model Hub ve topluluk modellerinin etkin kullanımı
-    * Tokenizer'ların iç yapısı ve özel tokenization işlemleri
-* **Pratik Projeler:**
-    * Birden fazla NLP görevini yerine getiren (multi-task) bir uygulama
-    * Özelleştirilmiş bir pipeline geliştirme
+#### Konular:
+-   **Çekirdek Kütüphane:** `Transformers` kütüphanesinin `AutoModel`, `AutoTokenizer` gibi sınıflarla esnek kullanımı.
+-   **Model Yönetimi:** Önceden eğitilmiş modellerin yüklenmesi, konfigürasyonu ve özel görevlere adaptasyonu.
+-   **Tokenizer Mimarisi:** Tokenizer'ların iç yapısı, özel token ekleme ve `padding`/`truncation` stratejileri.
+#### Pratik Çıktılar:
+-   🧩 Birden fazla NLP görevini (örn: classification + NER) yerine getiren bir pipeline geliştirme.
+-   🔧 Belirli bir probleme özel, standart dışı bir görev için özelleştirilmiş `pipeline` oluşturma.
+-   **🎯 Haftanın Ana Kazanımı:** Hugging Face ekosistemini sadece bir kullanıcı olarak değil, sistemleri özelleştirebilen bir geliştirici olarak kullanma yetkinliği.
 </details>
 
 <details>
-<summary><strong>Modül 4: Embedding, Vektör Veritabanları ve Anlamsal Arama (1 Hafta)</strong></summary>
+<summary><strong>🔍 Modül 4: Embedding, Vektör Veritabanları ve Anlamsal Arama</strong></summary>
 
-* **Konular:**
-    * Metin gömme (text embedding) modellerinin teorisi ve pratiği (Word2Vec, BERT, Sentence-Transformers)
-    * Vektör veritabanı sistemleri (Pinecone, Weaviate, Chroma, FAISS)
-    * Anlamsal arama (semantic search) ve benzerlik hesaplamaları (Cosine Similarity)
-    * Retrieval Augmented Generation (RAG) mimarisinin temelleri
-    * Farklı embedding modellerinin karşılaştırılması ve seçimi
-* **Pratik Projeler:**
-    * Belge koleksiyonu üzerinde çalışan bir anlamsal arama motoru
-    * Basit bir RAG tabanlı Soru-Cevap (Q&A) sistemi
+#### Konular:
+-   **Vektör Temsilleri:** Metin gömme (text embedding) modellerinin teorisi (Sentence-Transformers).
+-   **Veri Altyapısı:** Vektör veritabanı sistemleri (`Pinecone`, `ChromaDB`, `FAISS`) ve endeksleme stratejileri.
+-   **Temel Mimari:** Anlamsal arama (semantic search) ve **Retrieval Augmented Generation (RAG)** mimarisinin temelleri.
+#### Pratik Çıktılar:
+-   🔎 Geniş bir doküman koleksiyonu üzerinde çalışan, yüksek performanslı bir anlamsal arama motoru implementasyonu.
+-   💡 Temel bir RAG tabanlı Soru-Cevap (Q&A) sistemi kurarak LLM'in bilgi kapasitesini harici verilerle genişletme.
+-   **🎯 Haftanın Ana Kazanımı:** LLM'leri kendi özel verilerimizle besleyerek daha doğru ve bağlama uygun cevaplar üretmesini sağlayan RAG mimarisini kurma yeteneği.
 </details>
 
 <details>
-<summary><strong>Modül 5: LangChain ile Çok Adımlı Uygulama Geliştirme (1 Hafta)</strong></summary>
+<summary><strong>🔗 Modül 5: LangChain ile Çok Adımlı Uygulama Geliştirme</strong></summary>
 
-* **Konular:**
-    * LangChain framework'ünün temel bileşenleri: `Chains`, `Agents`, `Tools`
-    * Hafıza yönetimi (memory management) ve sohbet geçmişi (conversation handling)
-    * Harici API'ler ve özel araçlarla (custom tools) entegrasyon
-    * Karmaşık görevler için çok adımlı `agent` sistemleri tasarlama
-    * LangChain Expression Language (LCEL)
-* **Pratik Projeler:**
-    * Kişisel veriler üzerinde çalışan bir AI asistan uygulaması
-    * PDF/DOCX belgelerini analiz eden ve özetleyen bir sistem
+#### Konular:
+-   **Framework Mimarisi:** LangChain'in temel bileşenleri: `Chains`, `Agents`, `Tools`, `Memory`.
+-   **Kompleks Akışlar:** Karmaşık görevler için çok adımlı `agent` sistemleri ve `Chain`'ler tasarlama.
+-   **Entegrasyon:** Harici API'ler ve özel araçlarla (custom tools) entegrasyon.
+-   **Modern Arayüz:** LangChain Expression Language (LCEL) ile pipeline'ları daha deklaratif ve esnek bir şekilde oluşturma.
+#### Pratik Çıktılar:
+-   🤖 Kişisel veriler (PDF, DOCX) üzerinde çalışan ve bu verilerle ilgili soruları yanıtlayan bir AI asistan uygulaması.
+-   ⚙️ Birden fazla aracı (örn: web araması + hesap makinesi) orkestre eden bir `agent` geliştirme.
+-   **🎯 Haftanın Ana Kazanımı:** LLM'leri, hafıza ve harici araçlarla donatarak karmaşık, çok adımlı görevleri yerine getirebilen otonom `agent`'lar oluşturma.
 </details>
 
 <details>
-<summary><strong>Modül 6: Fine-Tuning ve Hafif Model Eğitimi (1 Hafta)</strong></summary>
+<summary><strong>⚙️ Modül 6: Fine-Tuning ve Hafif Model Eğitimi</strong></summary>
 
-* **Konular:**
-    * Aktarım öğrenmesi (transfer learning) ve alana özel adaptasyon (domain adaptation)
-    * Parametre-verimli fine-tuning: LoRA ve QLoRA teknikleri
-    * Eğitim için veri seti hazırlama, temizleme ve artırma (augmentation)
-    * Hugging Face `Trainer` API ile eğitim pipeline'ları oluşturma
-    * Model değerlendirme metrikleri (Perplexity, BLEU, ROUGE)
-* **Pratik Projeler:**
-    * Belirli bir alan (örn: hukuk, tıp) için bir modeli fine-tune etme
-    * Talimat tabanlı (instruction-based) bir veri seti ile instruction tuning
+#### Konular:
+-   **Model Adaptasyonu:** Aktarım öğrenmesi (transfer learning) ve alana özel adaptasyon (domain adaptation) stratejileri.
+-   **Verimlilik:** Parametre-verimli fine-tuning (PEFT): **LoRA** ve **QLoRA** teknikleri.
+-   **Veri Hazırlığı:** Eğitim için veri seti hazırlama, temizleme ve talimat tabanlı (instruction-based) formata dönüştürme.
+-   **Değerlendirme:** Model değerlendirme metrikleri (`Perplexity`, `BLEU`, `ROUGE`).
+#### Pratik Çıktılar:
+-   🎓 Açık kaynaklı bir LLM'i (örn: Llama 3, Mistral), belirli bir alan (hukuk, tıp vb.) için LoRA ile fine-tune etme.
+-   📈 Fine-tune edilmiş modelin performansını, temel modele kıyasla metriklerle değerlendirme.
+-   **🎯 Haftanın Ana Kazanımı:** Genel amaçlı LLM'leri, donanım kaynaklarını verimli kullanarak, belirli bir alanda uzmanlaşmış modellere dönüştürme yetkinliği.
 </details>
 
 <details>
-<summary><strong>Modül 7: LLM Tabanlı Uygulama Dağıtımı (Deployment) (1 Hafta)</strong></summary>
+<summary><strong>🚀 Modül 7: LLM Tabanlı Uygulama Dağıtımı (Deployment)</strong></summary>
 
-* **Konular:**
-    * Üretim ortamı (production) dağıtım stratejileri
-    * Model optimizasyonu: Quantization, Pruning, Knowledge Distillation
-    * API geliştirme (FastAPI) ve containerization (Docker)
-    * İzleme (monitoring), loglama ve hata yönetimi
-    * Ölçeklendirme (scaling) ve performans optimizasyonu
-* **Pratik Projeler:**
-    * Fine-tune edilmiş bir LLM'i, bir API servisi olarak bulutta (cloud) dağıtma
+#### Konular:
+-   **Optimizasyon:** Üretim ortamı için model optimizasyonu: `Quantization`, `Pruning`.
+-   **Servis Etme:** API geliştirme (`FastAPI`) ve `containerization` (`Docker`).
+-   **MLOps:** İzleme (monitoring), loglama, versiyonlama ve CI/CD pratikleri.
+-   **Altyapı:** Ölçeklendirme stratejileri ve bulut tabanlı dağıtım (`AWS`, `Azure`, `Hugging Face Spaces`).
+#### Pratik Çıktılar:
+-   🐳 Fine-tune edilmiş bir LLM'i, bir `FastAPI` servisi olarak `Docker` container'ına paketleme.
+-   ☁️ Geliştirilen API servisini, bulut platformunda (örn: Hugging Face Spaces) canlıya alma.
+-   **🎯 Haftanın Ana Kazanımı:** Geliştirilen LLM prototiplerini, endüstri standartlarına uygun, ölçeklenebilir ve güvenilir servislere dönüştürme.
 </details>
 
 <details>
-<summary><strong>Modül 8: LLM Protokolleri ile Kurumsal Sistem Mimarisi (1 Hafta)</strong></summary>
+<summary><strong>🏛️ Modül 8: LLM Protokolleri ile Kurumsal Sistem Mimarisi</strong></summary>
 
-* **Konular:**
-    * Kurumsal düzeyde LLM mimarileri ve en iyi pratikler
-    * Çoklu model orkestrasyonu (Multi-model orchestration)
-    * Güvenlik, gizlilik ve etik hususlar
-    * Maliyet optimizasyon stratejileri ve ROI analizi
-    * Gelecek trendleri ve gelişen teknolojiler (Multimodal LLMs, Agent Swarms)
-* **Pratik Projeler:**
-    * Uçtan uca kapsamlı bir LLM sisteminin teorik tasarımı ve prototip implementasyonu
+#### Konular:
+-   **Sistem Tasarımı:** Kurumsal düzeyde LLM mimarileri (örn: LLMOps).
+-   **Orkestrasyon:** Çoklu model ve çoklu `agent` sistemlerinin (multi-agent systems) yönetimi.
+-   **Yönetişim:** Güvenlik (prompt injection, PII), gizlilik, etik ve maliyet optimizasyonu.
+-   **Gelecek Vizyonu:** Gelişen trendler (`Multimodal LLMs`, `Agent Swarms`).
+#### Pratik Çıktılar:
+-   🗺️ Belirli bir kurumsal problem için uçtan uca, güvenli, ölçeklenebilir ve maliyet-etkin bir LLM sisteminin teknik mimari tasarımını yapma.
+-   🏗️ Tasarlanan mimarinin kritik bir parçasını prototip olarak implemente etme.
+-   **🎯 Haftanın Ana Kazanımı:** LLM teknolojilerini, kurumsal dünyanın gereksinimleri olan güvenlik, ölçeklenebilirlik ve yönetişim prensipleriyle birleştiren sistemler tasarlama ve yönetme vizyonu.
 </details>
 
 ---
 
-## 🛠️ Teknoloji Yığını ve Araçlar
+## 🛠️ Teknoloji Ekosistemi ve Mimari Rolleri
 
-Bu bootcamp boyunca kullanılacak olan temel teknolojiler ve araçlar:
-
-* **🐍 Programlama & Temel Kütüphaneler**
-    * `Python`
-    * `Jupyter Notebook` / `VS Code`
-    * `Pandas`, `NumPy`
-
-* **🧠 LLM & NLP Ekosistemi**
-    * `OpenAI API`
-    * `Hugging Face` (Transformers, Tokenizers, Datasets)
-    * `LangChain`
-
-* **💾 Veritabanları & Vektör Depoları**
-    * `Pinecone` / `ChromaDB` / `FAISS`
-    * `PostgreSQL` (İlişkisel veriler için)
-    * `Redis` (Cache ve oturum yönetimi için)
-
-* **🚀 Dağıtım & Altyapı (Deployment & DevOps)**
-    * `Docker`
-    * `FastAPI` / `Streamlit`
-    * `AWS` / `Azure` / `Hugging Face Spaces`
+| Alan | Teknolojiler | Stratejik Rolü |
+| :--- | :--- | :--- |
+| **🐍 Programlama & Altyapı** | `Python`, `Jupyter Notebook`, `VS Code` | Hızlı prototipleme, deneysel analiz ve üretim kodu geliştirme ortamı. |
+| **🧠 LLM & NLP Ekosistemi** | `OpenAI API`, `Hugging Face`, `LangChain` | Temel ve gelişmiş LLM yeteneklerine erişim, model orkestrasyonu ve karmaşık uygulama akışları oluşturma. |
+| **💾 Vektör Veritabanları** | `Pinecone`, `ChromaDB`, `FAISS` | Yüksek boyutlu embedding'leri verimli bir şekilde depolama, endeksleme ve anlamsal arama yapma. |
+| **🚀 Dağıtım & MLOps** | `Docker`, `FastAPI`, `Streamlit`, `AWS`/`Azure` | Geliştirilen modelleri API olarak servis etme, prototipleri interaktif arayüzlerle sunma ve bulut ortamında ölçeklendirme. |
 
 ---
 
-## 🏆 Kazanılacak Yetkinlikler
+## 🏆 Program Sonunda Kazanılacak Stratejik Yetkinlikler
 
-Bu programın sonunda aşağıdaki yetkinlikleri kazanmayı hedefliyorum:
-
--   ✅ **Derinlemesine Anlayış:** LLM'lerin çalışma prensiplerini, mimarilerini ve sınırlılıklarını derinlemesine anlama.
--   ✅ **Uygulama Geliştirme:** Fikirden üretime, uçtan uca LLM tabanlı uygulamalar tasarlayıp geliştirebilme.
--   ✅ **Modern Araç Hakimiyeti:** Hugging Face, LangChain gibi endüstri standardı araçları ve framework'leri etkin bir şekilde kullanabilme.
--   ✅ **Problem Çözme:** Gerçek dünya problemlerini LLM teknolojileriyle modelleyerek yenilikçi çözümler üretebilme.
--   ✅ **En İyi Pratikler:** Endüstri standartlarına uygun, ölçeklenebilir, güvenli ve maliyet-etkin sistemler kurma prensiplerini uygulama.
+-   ✅ **Stratejik Model Anlayışı:** LLM'lerin sadece nasıl çalıştığını değil, hangi iş problemine hangi mimarinin (RAG, Fine-tuning vb.) daha uygun olduğunu belirleme yeteneği.
+-   ✅ **Uçtan Uca Sistem Mimarisi:** Bir iş ihtiyacını analiz ederek, veri alımından model dağıtımına kadar tüm LLM yaşam döngüsünü tasarlayıp yönetebilme.
+-   ✅ **Modern Framework Hakimiyeti:** `Hugging Face` ve `LangChain` gibi endüstri standardı framework'leri kullanarak karmaşık ve modüler sistemler inşa etme.
+-   ✅ **Üretim Odaklı Mühendislik:** Ölçeklenebilirlik, güvenlik, maliyet ve izlenebilirlik gibi üretim ortamı gereksinimlerini gözeten LLM çözümleri geliştirme.
+-   ✅ **Yenilikçi Problem Çözme:** Gerçek dünya problemlerini LLM teknolojileriyle modelleyerek, veri odaklı ve otomatize edilmiş yenilikçi çözümler üretme.
 
 ---
 
-## 📝 Lisans
+## 🧭 Reponun Yapısı ve Navigasyon
 
-Bu repodaki kodlar ve kişisel notlar [MIT Lisansı](LICENSE) altında lisanslanmıştır.
+```bash
+.
+├── hafta_1/                # Modül 1: LLM Temelleri
+│   ├── notebooks/
+│   └── README.md
+├── hafta_2/                # Modül 2: Prompt Engineering
+│   ├── notebooks/
+│   └── README.md
+├── ... (diğer haftalar)
+├── hafta_8/
+├── LICENSE                 # MIT Lisansı
+└── README.md               # Bu ana döküman
