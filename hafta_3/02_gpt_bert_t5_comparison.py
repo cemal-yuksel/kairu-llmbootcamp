@@ -11,6 +11,7 @@ import time
 
 def model_architectures_overview():
     """Model mimarilerinin genel açıklaması"""
+    # Model mimarilerinin temel farkları yazdırılır
     print("=== Model Mimarileri Genel Bakış ===")
     print("GPT (Generative Pre-trained Transformer):")
     print("  - Decoder-only mimari")
@@ -37,22 +38,25 @@ def test_gpt_models():
     """GPT modellerini test et"""
     print("=== GPT Modelleri Test ===")
     
-    # Text Generation
+    # 1. GPT-2 ile metin üretimi örneği
     print("1. Text Generation (GPT-2):")
     generator = pipeline("text-generation", model="gpt2")
     prompt = "The benefits of machine learning include"
+    # Metin üretimi için pipeline çağrılır
     result = generator(prompt, max_length=80, num_return_sequences=1, 
                       temperature=0.7, do_sample=True)
     print(f"Prompt: {prompt}")
     print(f"Generated: {result[0]['generated_text']}")
     print()
     
-    # Conversation
+    # 2. DialoGPT ile sohbet örneği
     print("2. Conversational AI:")
     conversational = pipeline("conversational", model="microsoft/DialoGPT-medium")
     from transformers import Conversation
     
+    # Kullanıcı mesajı ile Conversation nesnesi oluşturulur
     conversation = Conversation("Hello, how are you?")
+    # Pipeline ile cevap alınır
     result = conversational(conversation)
     print(f"User: Hello, how are you?")
     print(f"Bot: {result.messages[-1]['content']}")
@@ -62,20 +66,22 @@ def test_bert_models():
     """BERT modellerini test et"""
     print("=== BERT Modelleri Test ===")
     
-    # Sentiment Analysis
+    # 1. Duygu analizi örneği
     print("1. Sentiment Analysis:")
     sentiment = pipeline("sentiment-analysis", 
                         model="nlptown/bert-base-multilingual-uncased-sentiment")
     text = "This product is absolutely amazing!"
+    # Metin için duygu analizi yapılır
     result = sentiment(text)
     print(f"Text: {text}")
     print(f"Sentiment: {result[0]['label']} (score: {result[0]['score']:.4f})")
     print()
     
-    # Fill Mask
+    # 2. Maskeli kelime doldurma örneği
     print("2. Fill Mask:")
     fill_mask = pipeline("fill-mask", model="bert-base-uncased")
     text = "The capital of [MASK] is Paris."
+    # [MASK] yerine en olası kelimeler üretilir
     result = fill_mask(text)
     print(f"Text: {text}")
     print("Top predictions:")
@@ -83,22 +89,24 @@ def test_bert_models():
         print(f"  {i+1}. {pred['token_str']} (score: {pred['score']:.4f})")
     print()
     
-    # Question Answering
+    # 3. Soru-cevap örneği
     print("3. Question Answering:")
     qa = pipeline("question-answering", model="bert-large-uncased-whole-word-masking-finetuned-squad")
     context = "BERT is a transformer model developed by Google. It uses bidirectional attention."
     question = "Who developed BERT?"
+    # Soru ve bağlam ile cevap alınır
     result = qa(question=question, context=context)
     print(f"Context: {context}")
     print(f"Question: {question}")
     print(f"Answer: {result['answer']} (score: {result['score']:.4f})")
     print()
     
-    # Named Entity Recognition
+    # 4. Varlık tanıma (NER) örneği
     print("4. Named Entity Recognition:")
     ner = pipeline("ner", model="dbmdz/bert-large-cased-finetuned-conll03-english",
                    aggregation_strategy="simple")
     text = "Apple Inc. was founded by Steve Jobs in Cupertino, California."
+    # Metindeki varlıklar bulunur
     result = ner(text)
     print(f"Text: {text}")
     print("Entities:")
@@ -110,16 +118,17 @@ def test_t5_models():
     """T5 modellerini test et"""
     print("=== T5 Modelleri Test ===")
     
-    # Translation
+    # 1. İngilizce'den Fransızca'ya çeviri örneği
     print("1. Translation:")
     translator = pipeline("translation_en_to_fr", model="t5-small")
     text = "Hello, how are you today?"
+    # Metin çevrilir
     result = translator(text)
     print(f"English: {text}")
     print(f"French: {result[0]['translation_text']}")
     print()
     
-    # Summarization
+    # 2. Özetleme örneği
     print("2. Summarization:")
     summarizer = pipeline("summarization", model="t5-small")
     text = """
@@ -129,16 +138,18 @@ def test_t5_models():
     networks with multiple layers to solve complex problems. These models have achieved 
     remarkable success in image recognition, natural language processing, and game playing.
     """
+    # Uzun metin özetlenir
     result = summarizer(text, max_length=50, min_length=20, do_sample=False)
     print(f"Original text: {text.strip()}")
     print(f"Summary: {result[0]['summary_text']}")
     print()
     
-    # Question Answering (T5 style)
+    # 3. T5 ile soru-cevap örneği (text2text)
     print("3. Question Answering (T5):")
     qa_t5 = pipeline("text2text-generation", model="t5-small")
     context = "The Eiffel Tower is located in Paris, France. It was built in 1889."
     question = "question: Where is the Eiffel Tower located? context: " + context
+    # Soru ve bağlam ile cevap alınır
     result = qa_t5(question, max_length=20)
     print(f"Question: Where is the Eiffel Tower located?")
     print(f"Context: {context}")
@@ -149,13 +160,13 @@ def single_line_comparison():
     """Tek satırda üç modeli test etme"""
     print("=== Tek Satırda Model Karşılaştırması ===")
     
-    # Aynı task için farklı modeller
+    # Aynı metin ile farklı modeller test edilir
     text = "I love this new technology!"
     
     print(f"Test text: {text}")
     print()
     
-    # Sentiment analysis with different models
+    # Farklı modellerle duygu analizi yapılır
     models = [
         ("BERT", "nlptown/bert-base-multilingual-uncased-sentiment"),
         ("RoBERTa", "cardiffnlp/twitter-roberta-base-sentiment-latest"),
@@ -165,6 +176,7 @@ def single_line_comparison():
     print("Sentiment Analysis karşılaştırması:")
     for model_name, model_path in models:
         try:
+            # Her model için pipeline oluşturulur ve sonuç alınır
             classifier = pipeline("sentiment-analysis", model=model_path)
             result = classifier(text)[0]
             print(f"{model_name:12}: {result['label']} (score: {result['score']:.4f})")
@@ -186,6 +198,7 @@ def performance_comparison():
     
     for model_name, model_path, task in models_to_test:
         try:
+            # Her model ve görev için süre ölçülür
             start_time = time.time()
             
             if task == "text-generation":
@@ -218,10 +231,11 @@ def model_size_comparison():
     
     for model_name, model_path in models:
         try:
+            # Tokenizer ve model yüklenir
             tokenizer = AutoTokenizer.from_pretrained(model_path)
             model = AutoModel.from_pretrained(model_path)
             
-            # Parameter sayısını hesapla
+            # Toplam ve eğitilebilir parametre sayısı hesaplanır
             total_params = sum(p.numel() for p in model.parameters())
             trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
             
@@ -238,6 +252,7 @@ def use_case_recommendations():
     """Model kullanım önerileri"""
     print("=== Model Kullanım Önerileri ===")
     
+    # Her model için uygun ve uygun olmayan kullanım alanları yazdırılır
     recommendations = {
         "GPT": [
             "✅ Text generation",
@@ -272,6 +287,7 @@ def use_case_recommendations():
         print()
 
 if __name__ == "__main__":
+    # Ana program: tüm örnek fonksiyonlar sırasıyla çalıştırılır
     print("GPT, BERT ve T5 Model Karşılaştırması\n")
     
     model_architectures_overview()

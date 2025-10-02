@@ -6,7 +6,7 @@ ve farklı cihazlar arasında performans karşılaştırması yapma yöntemlerin
 """
 
 import torch
-torch.backends.quantized.engine = "qnnpack"
+# torch.backends.quantized.engine = "qnnpack"  # Bu satırı kaldırın veya yoruma alın
 import time
 import psutil
 import gc

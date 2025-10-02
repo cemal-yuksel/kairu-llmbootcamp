@@ -14,7 +14,8 @@ def tokenizer_example():
     #AutoTokenizer kullanılarak bir metnin nasıl token'lara ayrıldığı
     # Encode (input_ids) ve attention mask üretimi
     # decode() ile input_ids → metne geri dönüş"""
-
+    
+    # 1. Model adı belirlenir ve tokenizer yüklenir
     print("=== AutoTokenizer Örneği ===")
     
     model_name = "bert-base-uncased"
@@ -22,21 +23,21 @@ def tokenizer_example():
     
     text = "Hello, this is a sample text for tokenization."
     
-    # Tokenization
+    # 2. Metin token'lara ayrılır
     tokens = tokenizer.tokenize(text)
     print(f"Tokens: {tokens}")
 
-    # Encoding: token idlerinin tensor(sayısal vektör) karşılığıdır. 101 her metnin başına gelen özel tokendır.
+    # 3. Token'lar sayısal id'lere (input_ids) dönüştürülür
     encoded = tokenizer.encode(text, return_tensors="pt")
     print(f"Encoded: {encoded}")
     
-    # Encoding with attention mask
+    # 4. Tokenizer ile input_ids ve attention mask birlikte alınır
     encoded_dict = tokenizer(text, return_tensors="pt", padding=True, truncation=True)
     print(f"Input IDs: {encoded_dict['input_ids']}")
     print(f"Attention Mask: {encoded_dict['attention_mask']}") #modelin hangi tokenlara dikkat etmesi gerektiğini belirtir.
     # 1 bu tokena dikkat et 0 bu token padding, yok sayılabilir.
 
-    # Decoding
+    # 5. Sayısal id'ler tekrar metne çevrilir
     decoded = tokenizer.decode(encoded[0], skip_special_tokens=True)
     print(f"Decoded: {decoded}") #düz metnimiz
     print()
@@ -47,6 +48,7 @@ def automodel_example():
     .last_hidden_state üzerinden token embedding'lerin alınması
     İlk token ([CLS]) embedding'inin örneklenmesi
     """
+    # 1. Model ve tokenizer yüklenir
     print("=== AutoModel Örneği ===")
     
     model_name = "bert-base-uncased" # bert modeli seçiliyor (küçük harfli)
@@ -55,16 +57,14 @@ def automodel_example():
 
     text = "This is an example sentence."
     
-    # Tokenize : padding=True: uzunluklar eşitlenir (burada gerek yok, ama iyi alışkanlık) -truncation=True: metin uzunsa kesilir
+    # 2. Metin tokenize edilir ve tensöre dönüştürülür
     inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True) # metin pytorch tensörlwrine dönüşütürülüyor.
 
-    
-    # Model inference :Grad hesaplamasını kapatır, inference (tahmin) sırasında hız ve verimlilik sağlar.
+    # 3. Model ile tahmin yapılır (inference)
     with torch.no_grad():
         outputs = model(**inputs) # Modelden çıktı alınır.
 
-    
-    # Extract embeddings
+    # 4. Son katmandaki gizli durumlar (embeddingler) alınır
     last_hidden_states = outputs.last_hidden_state # bu tensörün şekli : (batch_size, sequence_length, hidden_size)
 
     print(f"Output shape: {last_hidden_states.shape}")  #Output shape: torch.Size([1, 8, 768]) her token için 768 boyutlu bir vektör elde edilir.
@@ -78,7 +78,7 @@ def pipeline_examples():
     Her görevin çıktısı, Hugging Face formatında dict objeleridir"""
     print("=== Pipeline Örnekleri ===")
     
-    # Sentiment Analysis Pipeline: cümle olumlu mu olumsuz mu
+    # 1. Duygu Analizi Pipeline'ı: cümle olumlu mu olumsuz mu
     print("1. Sentiment Analysis:")
     sentiment_pipeline = pipeline("sentiment-analysis")
     text = "I love this product! It's amazing."
@@ -87,7 +87,7 @@ def pipeline_examples():
     print(f"Result: {result}")
     print()
     
-    # Text Generation Pipeline : gpt 2 ile verilen başlangıca metin üretir
+    # 2. Metin Üretimi Pipeline'ı: gpt2 ile verilen başlangıca metin üretir
     print("2. Text Generation:")
     text_generator = pipeline("text-generation", model="gpt2")
     prompt = "The future of artificial intelligence is"
@@ -96,7 +96,7 @@ def pipeline_examples():
     print(f"Generated: {result[0]['generated_text']}")
     print()
     
-    # Question Answering Pipeline : verilen bağlamdan sorunun cevabını bulur
+    # 3. Soru-Cevap Pipeline'ı: verilen bağlamdan sorunun cevabını bulur
     print("3. Question Answering:")
     qa_pipeline = pipeline("question-answering")
     context = "The capital of France is Paris. It is known for the Eiffel Tower."
@@ -107,7 +107,7 @@ def pipeline_examples():
     print(f"Answer: {result['answer']} (score: {result['score']:.4f})")
     print()
     
-    # Fill Mask Pipeline : [Mask] yerine en olası kelimeleri üretis
+    # 4. Maskeli Kelime Doldurma Pipeline'ı: [MASK] yerine en olası kelimeleri üretir
     print("4. Fill Mask:") 
     fill_mask = pipeline("fill-mask")
     mask_token = fill_mask.tokenizer.mask_token  # genellikle <mask> ya da [MASK]
@@ -131,7 +131,7 @@ def performance_comparison():
         "Speed and efficiency analysis."
     ]
     
-    # Manuel approach
+    # 1. Manuel yaklaşım: Her metin için tokenizer ve model ayrı ayrı çalıştırılır
     start_time = time.time()
     model_name = "bert-base-uncased"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -144,7 +144,7 @@ def performance_comparison():
     
     manual_time = time.time() - start_time
     
-    # Pipeline approach
+    # 2. Pipeline yaklaşımı: pipeline ile topluca özellik çıkarımı yapılır
     start_time = time.time()
     feature_extractor = pipeline("feature-extraction", model=model_name)
     
@@ -166,7 +166,7 @@ def custom_pipeline_example():
     Farklı duygusal tonlardaki metinlere verilen cevapların yorumlanması"""
     print("=== Özelleştirilmiş Pipeline ===")
     
-    # Specific model ile pipeline
+    # 1. Belirli bir model ve tokenizer ile pipeline oluşturulur
     model_name = "distilbert-base-uncased-finetuned-sst-2-english"
     sentiment_pipeline = pipeline(
         "sentiment-analysis",
@@ -183,6 +183,7 @@ def custom_pipeline_example():
     ]
     
     print("Sentiment analysis sonuçları:")
+    # 2. Her metin için duygu analizi yapılır ve sonuçlar yazdırılır
     for text in texts:
         result = sentiment_pipeline(text)
         label = result[0]['label']
@@ -191,6 +192,7 @@ def custom_pipeline_example():
     print()
 
 if __name__ == "__main__":
+    # Ana program: tüm örnek fonksiyonlar sırasıyla çalıştırılır
     print("AutoTokenizer & AutoModel + Pipeline Örnekleri\n")
     
     tokenizer_example()
