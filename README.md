@@ -244,7 +244,7 @@ kairu-llmbootcamp/
 - **turkish_simple.py**: Türkçe dil işleme için basit NLP uygulamaları ve örnekler
 
 #### **hafta_2/** - Prompt Engineering Mastery
-- **01-04_prompt_techniques.py**: Sistematik prompt engineeringteknikleri (4 aşamalı)
+- **01-04_prompt_techniques.py**: Sistematik prompt engineering teknikleri (4 aşamalı)
 - **05_chatcompletion_api.py**: OpenAI API ile profesyonel chatbot geliştirme
 - **06_function_calling.py**: LLM'leri harici sistemlerle entegre etme teknikleri
 - **07_structured_outputs.py**: JSON ve yapılandırılmış veri üretimi
