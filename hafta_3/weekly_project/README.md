@@ -63,7 +63,7 @@ Ayrıca, otomatik donanım optimizasyonu (CPU/GPU), hata yönetimi ve pastel, mo
 
 ### Ana Sayfa & Giriş Paneli
 
-![AI Hero Suite Ana Sayfa](../assets/1.png)
+![AI Hero Suite Ana Sayfa](../weekly_project/assets/1.png)
 > **Açıklama:**  
 > Modern, pastel renklerle tasarlanmış ana sayfa. Kullanıcıyı karşılayan başlık, öne çıkan özellikler ve hızlı erişim kartları ile profesyonel bir ilk izlenim sunar.  
 > Ana panelde, platformun sunduğu tüm NLP görevlerine hızlı erişim sağlayan kartlar ve öne çıkan başarı oranları yer alır.
@@ -72,7 +72,7 @@ Ayrıca, otomatik donanım optimizasyonu (CPU/GPU), hata yönetimi ve pastel, mo
 
 ### Duygu Analizi Modülü
 
-![Duygu Analizi Tabı](../assets/2.png)
+![Duygu Analizi Tabı](../weekly_project/assets/2.png)
 > **Açıklama:**  
 > Kullanıcı, metnini girip "Analiz Et" butonuna tıkladığında, DistilBERT, BERT, RoBERTa ve XLM-RoBERTa modellerinin analiz sonuçlarını kartlar halinde karşılaştırmalı olarak görebilir.  
 > Her kartta model adı, duygu etiketi (ör. Positive, Negative, Neutral) ve güven skoru yer alır.  
@@ -82,7 +82,7 @@ Ayrıca, otomatik donanım optimizasyonu (CPU/GPU), hata yönetimi ve pastel, mo
 
 ### Metin Özeti Modülü
 
-![Metin Özeti Tabı](../assets/3.png)
+![Metin Özeti Tabı](../weekly_project/assets/3.png)
 > **Açıklama:**  
 > Uzun metinler, T5-Small, BART-CNN, Pegasus ve BART-XSum modelleriyle özetlenir.  
 > Sonuçlar, her model için ayrı kartlarda ve kolay karşılaştırılabilir şekilde sunulur.  
