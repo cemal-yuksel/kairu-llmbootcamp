@@ -203,10 +203,10 @@ kairu-llmbootcamp/
 │   ├── weekly_assignment/
 │   ├── weekly_project/
 │   ├── .gitignore
-│   ├── 01_autotokenizer_automodel.ipynb
-│   ├── 02_gpt_bert_t5_comparison.ipynb
+│   ├── 01_autotokenizer_automodel.py
+│   ├── 02_gpt_bert_t5_comparison.py
 │   ├── 03_cpu_gpu_optimization.py
-│   ├── 04_performance_measurement.ipynb
+│   ├── 04_performance_measurement.py
 │   ├── benchmark_results.json
 │   ├── HOMEWORK.md
 │   ├── quick_test.py
