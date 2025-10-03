@@ -5,6 +5,23 @@
 
 ---
 
+## 📁 Dosya Yapısı
+
+Bu klasördeki ana dosyalar ve içerikleri:
+
+| Dosya Adı                        | Açıklama                                                                                   |
+|-----------------------------------|-------------------------------------------------------------------------------------------|
+| `01_autotokenizer_automodel.py`   | AutoTokenizer ve AutoModel ile temel encode/decode, manuel ve pipeline ile model çağırma   |
+| `02_gpt_bert_t5_comparison.py`    | GPT, BERT ve T5 mimarilerinin karşılaştırılması, pipeline entegrasyonu ve analizler        |
+| `03_cpu_gpu_optimization.py`      | CPU/GPU seçimi, quantization, batch processing ve bellek dostu inference teknikleri        |
+| `04_performance_measurement.py`   | Pipeline ile performans ölçümü, farklı task ve batch size'larda benchmark ve raporlama     |
+| `requirements.txt`                | Gerekli Python paketleri listesi                                                           |
+| `README.md`                       | Haftanın özeti, kullanım talimatları, teknik açıklamalar ve ek kaynaklar                   |
+
+Her dosya, Hugging Face Transformers ve PyTorch ekosisteminde üretim kalitesinde NLP uygulamaları geliştirmek için örnekler ve optimizasyon teknikleri içerir.
+
+---
+
 ## 🎯 Haftanın Özeti
 Bu hafta, Hugging Face Transformers kütüphanesinin temel bileşenlerini kapsamlı ve sistematik biçimde analiz ederek, **AutoTokenizer**, **AutoModel** ve **Pipeline** yapılarını ileri düzeyde değerlendirdim.  
 Çalışmalarımda, performans ölçümleri, CPU/GPU optimizasyon stratejileri, quantization ve batch processing gibi modern teknikleri uygulayarak; yalnızca prototipleme değil, aynı zamanda **üretim ve araştırma ortamlarında kullanılabilecek, akademik standartlarda benchmark raporları** üretebilen, yüksek verimli ve sürdürülebilir bir NLP altyapısı inşa ettim.  
