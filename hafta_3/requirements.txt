@@ -3,11 +3,20 @@ torch>=2.0.0
 torchvision>=0.15.0
 torchaudio>=2.0.0
 
-# Hugging Face Transformers
-transformers>=4.30.0
+
+# Hugging Face Transformers ve ek modeller
+transformers==4.38.2
+gradio==4.25.0
 datasets>=2.12.0
 tokenizers>=0.13.0
 accelerate>=0.20.0
+torch>=2.0.0
+sentencepiece>=0.1.99
+
+# Duygu analizi için ek modellerin bağımlılıkları
+scipy>=1.10.0
+emoji>=2.10.0
+protobuf>=3.20.0
 
 # Model optimizasyonu ve quantization
 bitsandbytes>=0.39.0
@@ -42,7 +51,7 @@ flask>=2.3.0
 fastapi>=0.100.0
 uvicorn>=0.22.0
 
-# Gelişmiş modeller için
+
 sentence-transformers>=2.2.0
 spacy>=3.6.0
 
@@ -71,14 +80,14 @@ pympler>=0.9
 # Çoklu işlemci desteği
 multiprocess>=0.70.0
 
-# Gelişmiş tokenization
+
 tiktoken>=0.4.0
 
 # Audio processing (eğer ses modelleri kullanılacaksa)
 librosa>=0.10.0
 soundfile>=0.12.0
 
-# NLP utilities
+
 nltk>=3.8.0
 textblob>=0.17.0
 
@@ -102,7 +111,7 @@ tensorboard>=2.13.0
 # Date/time utilities
 python-dateutil>=2.8.0
 
-# Scientific computing
+
 scikit-learn>=1.3.0
 
 # File handling

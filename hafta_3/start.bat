@@ -217,5 +217,22 @@ echo %GREEN%🚀 İyi çalışmalar!%NC%
 echo.
 echo %BLUE%Sanal ortam aktif kalıyor... Bu pencereyi kapatmayın.%NC%
 
+REM Gereksinimler yükleniyor
+echo %YELLOW%📦 Python paketleri yükleniyor...%NC%
+python -m pip install --upgrade pip
+if exist requirements.txt (
+    pip install -r requirements.txt
+    if errorlevel 1 (
+        echo %RED%❌ Paket yüklemede hata oluştu! requirements.txt dosyanızda bir hata olabilir veya internet bağlantınızı kontrol edin.%NC%
+        pause
+        exit /b 1
+    )
+    echo %GREEN%✅ requirements.txt başarıyla yüklendi.%NC%
+) else (
+    echo %RED%❌ requirements.txt dosyası bulunamadı!%NC%
+    pause
+    exit /b 1
+)
+
 REM Sanal ortamı aktif bırak
 cmd /k
