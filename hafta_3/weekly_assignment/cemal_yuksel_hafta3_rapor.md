@@ -14,7 +14,7 @@ Bu teknik raporda, **GPT-2**, **BERT** ve **T5** gibi günümüzün önde gelen 
 
 ---
 
-## 🧠 Flashcard Set: LLM Karşılaştırma & Kavramlar
+## 🧠 LLM Karşılaştırma & Kavramlar
 
 <div align="center">
 
@@ -28,7 +28,7 @@ Bu teknik raporda, **GPT-2**, **BERT** ve **T5** gibi günümüzün önde gelen 
 
 ---
 
-### 🚀 <span style="color:#2cb67d"><b>En İyi Performanslar</b></span> (Flashcard)
+### 🚀 <span style="color:#2cb67d"><b>En İyi Performanslar</b></span> 
 
 - **En Hızlı Model:** <span style="color:#ff8906"><b>BERT</b></span> (0.02 sn)
 - **En Yüksek Çıktı Kalitesi:** <span style="color:#7f5af0"><b>GPT-2</b></span> & <span style="color:#ff8906"><b>BERT</b></span> (Skor: 1.00)
