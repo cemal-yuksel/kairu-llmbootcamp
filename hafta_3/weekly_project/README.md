@@ -92,7 +92,7 @@ Ayrıca, otomatik donanım optimizasyonu (CPU/GPU), hata yönetimi ve pastel, mo
 
 ### Soru-Cevap Modülü
 
-![Soru-Cevap Tabı]../weekly_project/assets/4.png)
+![Soru-Cevap Tabı](../weekly_project/assets/4.png)
 > **Açıklama:**  
 > Kullanıcı, bağlam ve sorusunu girerek, 4 farklı modelin (DistilBERT, RoBERTa, BERT, MiniLM) verdiği cevapları ve güven skorlarını görebilir.  
 > Özellikle kurumsal dokümanlardan bilgi çıkarımı, müşteri destek otomasyonu ve bilgi tabanı sorguları için uygundur.  
