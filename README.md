@@ -7,7 +7,7 @@
 
 <div align="center">
 
-[![Organizasyon](https://img.shields.io/badge/Organizasyon-Kairu-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/company/kairu/)
+[![Organizasyon](https://img.shields.io/badge/Organizasyon-Kairu-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/company/kairuu/)
 [![Durum](https://img.shields.io/badge/Durum-Aktif-brightgreen?style=for-the-badge)](./)
 [![Hafta](https://img.shields.io/badge/İlerleme-3/8-blueviolet?style=for-the-badge)](./)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
@@ -32,8 +32,8 @@
 | :---- | :--- | :---: | :--- |
 | **1** | LLM Temelleri ve Python ile NLP’ye Giriş | ✅ Tamamlandı | [hafta_1/](./hafta_1/) |
 | **2** | Prompt Engineering ve API Tabanlı Kullanım | ✅ Tamamlandı | [hafta_2/](./hafta_2/) |
-| **3** | Hugging Face Transformers Derinlemesine | ➡️ Devam Ediyor | [hafta_3/](./hafta_3/) |
-| **4** | Embedding, Vektör Veritabanları ve Anlamsal Arama | 🔜 Başlanacak | [hafta_4/](./hafta_4/) |
+| **3** | Hugging Face Transformers Derinlemesine | ✅ Tamamlandı | [hafta_3/](./hafta_3/) |
+| **4** | Embedding, Vektör Veritabanları ve Anlamsal Arama | ➡️ Devam Ediyor | [hafta_4/](./hafta_4/) |
 | **5** | LangChain ile Çok Adımlı Uygulama Geliştirme | 🔜 Başlanacak | [hafta_5/](./hafta_5/) |
 | **6** | Fine-Tuning ve Hafif Model Eğitimi (LoRA, QLoRA) | 🔜 Başlanacak | [hafta_6/](./hafta_6/) |
 | **7** | LLM Tabanlı Uygulama Dağıtımı (Deployment) | 🔜 Başlanacak | [hafta_7/](./hafta_7/) |
@@ -178,21 +178,93 @@
 ## 🧭 Reponun Yapısı ve Navigasyon
 
 ```bash
-.
+kairu-llmbootcamp/
 ├── hafta_1/
 │   ├── microsoft.py
 │   ├── qwen.py
 │   └── turkish_simple.py
 │
 ├── hafta_2/
-│   ├── 01-04_prompt... .ipynb
+│   ├── 01_zero_shot.py
+│   ├── 02_few_shot.py
+│   ├── 03_chain_of_though.py
+│   ├── 04_role_based.py
 │   ├── 05_chatcompletion_api.py
-│   ├── ... (diğer scriptler)
+│   ├── 06_function_calling.py
+│   ├── 07_structured_outputs.py
+│   ├── 08_advanced_prompting.py
 │   ├── 09_web_chatbot.py
 │   └── weekly_assignment/
 │       └── app.py
 │
-├── ... (diğer haftalar)
+├── hafta_3/
+│   ├── .gradio/
+│   ├── llmhafta3.venv/
+│   ├── weekly_assignment/
+│   ├── weekly_project/
+│   ├── .gitignore
+│   ├── 01_autotokenizer_automodel.ipynb
+│   ├── 02_gpt_bert_t5_comparison.ipynb
+│   ├── 03_cpu_gpu_optimization.py
+│   ├── 04_performance_measurement.ipynb
+│   ├── benchmark_results.json
+│   ├── HOMEWORK.md
+│   ├── quick_test.py
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── SETUP.md
+│   ├── start.bat
+│   ├── start.sh
+│   └── Week Notes.ipynb
+│
+├── hafta_4/
+│   └── [Gelecek haftalarda eklenecek]
+│
+├── hafta_5/
+│   └── [Gelecek haftalarda eklenecek]
+│
+├── hafta_6/
+│   └── [Gelecek haftalarda eklenecek]
+│
+├── hafta_7/
+│   └── [Gelecek haftalarda eklenecek]
+│
+├── hafta_8/
+│   └── [Gelecek haftalarda eklenecek]
 │
 ├── LICENSE
 └── README.md
+```
+
+### 📁 Detaylı Klasör Açıklamaları:
+
+#### **hafta_1/** - LLM Temelleri ve Başlangıç
+- **microsoft.py**: Microsoft'un Phi-3 modelinin kullanımı ve temel özelliklerinin keşfi
+- **qwen.py**: Alibaba'nın Qwen modeliyle text generation ve anlayış örnekleri  
+- **turkish_simple.py**: Türkçe dil işleme için basit NLP uygulamaları ve örnekler
+
+#### **hafta_2/** - Prompt Engineering Mastery
+- **01-04_prompt_techniques.py**: Sistematik prompt engineeringteknikleri (4 aşamalı)
+- **05_chatcompletion_api.py**: OpenAI API ile profesyonel chatbot geliştirme
+- **06_function_calling.py**: LLM'leri harici sistemlerle entegre etme teknikleri
+- **07_structured_outputs.py**: JSON ve yapılandırılmış veri üretimi
+- **08_advanced_prompting.py**: ReAct, Chain-of-Thought ve gelişmiş stratejiler
+- **09_web_chatbot.py**: Web arayüzlü interaktif chatbot implementasyonu
+- **weekly_assignment/**: Haftalık proje takibi ve solution
+
+#### **hafta_3/** - Hugging Face Transformers Derinlemesine ve Performans Analizi
+- **.gradio/**: Gradio arayüzüyle ilgili dosyalar
+- **llmhafta3.venv/**: Sanal ortam klasörü
+- **weekly_assignment/**, **weekly_project/**: Haftalık proje takibi ve solution
+- **01_autotokenizer_automodel.ipynb**: AutoTokenizer ve AutoModel kullanımı
+- **02_gpt_bert_t5_comparison.ipynb**: GPT, BERT, T5 karşılaştırmalı analiz
+- **03_cpu_gpu_optimization.py**: CPU/GPU optimizasyon scripti
+- **04_performance_measurement.ipynb**: Performans ölçüm ve benchmark çalışmaları
+- **benchmark_results.json**: Benchmark sonuçları
+- **HOMEWORK.md**: Hafta ödevi açıklamaları
+- **quick_test.py**: Hızlı test scripti
+- **README.md**: Hafta 3'e özel dokümantasyon
+- **requirements.txt**: Gerekli paketler
+- **SETUP.md**: Kurulum yönergeleri
+- **start.bat**, **start.sh**: Başlatma scriptleri (Windows/Linux)
+- **Week Notes.ipynb**: Haftalık notlar ve gözlemler
