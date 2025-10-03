@@ -10,7 +10,7 @@
 
 ## 📌 Executive Summary
 
-Bu teknik raporda, **GPT-2**, **BERT** ve **T5** gibi günümüzün önde gelen Büyük Dil Modeli (LLM) mimarilerinin çeşitli metin işleme görevlerindeki performansları, profesyonel bir bakış açısıyla karşılaştırılmıştır. Her bir modelin güçlü ve zayıf yönleri, kullanım alanları ve çıktı kalitesi; deneysel veriler, tablolar ve grafiklerle desteklenerek detaylı biçimde analiz edilmiştir. Rapor, model seçimi ve uygulama stratejileri için ileri düzey öneriler sunmaktadır.
+Bu teknik raporda, **GPT-2**, **BERT** ve **T5** gibi günümüzün önde gelen LLM mimarilerinin çeşitli metin işleme görevlerindeki performansları, profesyonel bir bakış açısıyla karşılaştırılmıştır. Her bir modelin güçlü ve zayıf yönleri, kullanım alanları ve çıktı kalitesi; deneysel veriler, tablolar ve grafiklerle desteklenerek detaylı biçimde analiz edilmiştir. Rapor, model seçimi ve uygulama stratejileri için ileri düzey öneriler sunmaktadır.
 
 ---
 
