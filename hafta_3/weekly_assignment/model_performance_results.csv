@@ -1,0 +1,31 @@
+TextID,Model,Task,Time (s),Memory (GB),Quality Score,Output
+1,GPT-2,text_generation,4.034,0.54,1.0,"{'generated_text': ""I love programming with Python. It's amazing for AI development and machine learning projects!\n\nI "
+1,BERT,sentiment_analysis,0.046,0.17,1.0,"{'label': 'POSITIVE', 'score': 0.9998676776885986}"
+1,T5,summarization,0.137,0.24,1.0,{'summary_text': 'I love programming with Python .'}
+2,GPT-2,text_generation,3.915,-0.0,1.0,"{'generated_text': ""The weather is terrible today and I feel so sad. I'm going to go to bed and wake up and I'm going to"
+2,BERT,sentiment_analysis,0.03,0.0,1.0,"{'label': 'NEGATIVE', 'score': 0.9991414546966553}"
+2,T5,summarization,0.142,-0.0,0.4,{'summary_text': 'the weather is terrible today and I feel so sad.'}
+3,GPT-2,text_generation,4.349,0.0,1.0,{'generated_text': 'Artificial intelligence is transforming the world in unprecedented ways. It is transforming the way 
+3,BERT,sentiment_analysis,0.014,0.0,1.0,"{'label': 'POSITIVE', 'score': 0.999516487121582}"
+3,T5,summarization,0.147,-0.0,0.4,{'summary_text': 'artificial intelligence is transforming the world in unprecedented ways .'}
+4,GPT-2,text_generation,4.04,0.0,1.0,{'generated_text': 'Kairu Bootcamp is a great opportunity to learn about LLMs and their real-world applications.\n\nThe 
+4,BERT,sentiment_analysis,0.026,0.0,1.0,"{'label': 'POSITIVE', 'score': 0.9996045231819153}"
+4,T5,summarization,0.274,-0.0,0.4,{'summary_text': 'Kairu Bootcamp is a great opportunity to learn about LLMs and their real-world applications.'}
+5,GPT-2,text_generation,4.537,0.0,1.0,"{'generated_text': 'Despite the challenges, the project was a huge success and everyone was happy.\n\n""We are very happy"
+5,BERT,sentiment_analysis,0.03,0.0,1.0,"{'label': 'POSITIVE', 'score': 0.9998816251754761}"
+5,T5,summarization,0.181,0.0,0.7,{'summary_text': 'the project was a huge success and everyone was happy .'}
+6,GPT-2,text_generation,4.09,-0.0,1.0,{'generated_text': 'This is the worst movie I have ever seen. The plot was boring and the acting was terrible. I was so 
+6,BERT,sentiment_analysis,0.025,0.0,1.0,"{'label': 'NEGATIVE', 'score': 0.9998070597648621}"
+6,T5,summarization,0.148,-0.0,1.0,{'summary_text': 'the plot was boring and the acting was terrible .'}
+7,GPT-2,text_generation,4.589,0.0,1.0,"{'generated_text': 'Python is a versatile language used for web development, data science, and more. It is a powerful, f"
+7,BERT,sentiment_analysis,0.011,0.0,1.0,"{'label': 'POSITIVE', 'score': 0.9981946349143982}"
+7,T5,summarization,0.239,0.0,0.4,"{'summary_text': 'Python is a versatile language used for web development, data science, and more.'}"
+8,GPT-2,text_generation,4.365,-0.0,1.0,"{'generated_text': ""The food was delicious and the service was excellent. I ordered the chicken and the fries. The fries"
+8,BERT,sentiment_analysis,0.007,0.0,1.0,"{'label': 'POSITIVE', 'score': 0.9998767375946045}"
+8,T5,summarization,0.123,-0.0,0.4,{'summary_text': 'the food was delicious and the service was excellent.'}
+9,GPT-2,text_generation,4.17,0.0,1.0,{'generated_text': 'I am not sure if I can finish this assignment on time. I am not sure if I can finish this assignment
+9,BERT,sentiment_analysis,0.007,0.0,1.0,"{'label': 'NEGATIVE', 'score': 0.9996577501296997}"
+9,T5,summarization,0.185,-0.0,0.4,{'summary_text': 'I am not sure if I can finish this assignment on time .'}
+10,GPT-2,text_generation,4.019,-0.0,1.0,"{'generated_text': 'The new policy will have a significant impact on the company\'s future.\n\n""We are very pleased to h"
+10,BERT,sentiment_analysis,0.008,0.0,1.0,"{'label': 'POSITIVE', 'score': 0.9995173215866089}"
+10,T5,summarization,0.194,0.0,0.7,"{'summary_text': ""new policy will have a significant impact on the company's future .""}"
