@@ -1,0 +1,7 @@
+2025-10-03 02:40:34,188 - INFO - gpt2 loaded in 1.57 seconds.
+2025-10-03 02:40:34,878 - INFO - distilbert-base-uncased-finetuned-sst-2-english loaded in 0.69 seconds.
+2025-10-03 02:40:35,416 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-10-03 02:40:43,000 - INFO - t5-small loaded in 8.12 seconds.
+2025-10-03 03:11:48,973 - INFO - gpt2 loaded in 1.33 seconds.
+2025-10-03 03:11:49,544 - INFO - distilbert-base-uncased-finetuned-sst-2-english loaded in 0.57 seconds.
+2025-10-03 03:11:50,508 - INFO - t5-small loaded in 0.96 seconds.
