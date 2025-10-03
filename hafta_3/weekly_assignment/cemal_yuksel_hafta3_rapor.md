@@ -73,17 +73,17 @@ Aşağıda, 10 farklı test metni üzerinde yapılan ölçümlerin özet tablosu
 
 #### Model Bazında Çalışma Süreleri
 
-![Model Bazında Çalışma Süreleri](weekly_assignment/Figure_1.png)
+![Model Bazında Çalışma Süreleri](Figure_1.png)
 > *GPT-2'nin çalışma süresi diğer modellere göre belirgin şekilde daha yüksektir. BERT ise neredeyse gerçek zamanlı sonuç vermektedir.*
 
 #### Model Bazında Bellek Kullanımı
 
-![Model Bazında Bellek Kullanımı](weekly_assignment/Figure_2.png)
+![Model Bazında Bellek Kullanımı](Figure_2.png)
 > *Bellek kullanımı açısından BERT en verimli modeldir. T5 ve GPT-2'nin ilk çalıştırmada daha fazla bellek kullandığı gözlemlenmiştir.*
 
 #### Model Bazında Çıktı Kalitesi
 
-![Model Bazında Çıktı Kalitesi](weekly_assignment/Figure_3.png)
+![Model Bazında Çıktı Kalitesi](Figure_3.png)
 > *BERT ve GPT-2, test setinde tutarlı şekilde yüksek çıktı kalitesi sunarken, T5'in özetleme görevinde bazı metinlerde kalite skoru düşmektedir.*
 
 ---
