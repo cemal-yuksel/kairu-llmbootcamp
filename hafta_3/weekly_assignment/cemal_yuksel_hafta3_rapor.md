@@ -10,7 +10,7 @@
 
 ## 📌 Executive Summary
 
-Bu teknik raporda, **GPT-2**, **BERT** ve **T5** gibi günümüzün önde gelen LLM mimarilerinin çeşitli metin işleme görevlerindeki performansları, profesyonel bir bakış açısıyla karşılaştırılmıştır. Her bir modelin güçlü ve zayıf yönleri, kullanım alanları ve çıktı kalitesi; deneysel veriler, tablolar ve grafiklerle desteklenerek detaylı biçimde analiz edilmiştir. Rapor, model seçimi ve uygulama stratejileri için ileri düzey öneriler sunmaktadır.
+Bu teknik raporda, **GPT-2**, **BERT** ve **T5** gibi günümüzün önde gelen LLM mimarilerinin çeşitli metin işleme görevlerindeki performansları, profesyonel bir bakış açısıyla karşılaştırılmıştır. Her bir modelin güçlü ve zayıf yönleri, kullanım alanları ve çıktı kalitesi; deneysel veriler, tablolar ve grafiklerle desteklenerek detaylı biçimde analiz edilmiştir. Rapor, model seçimi ve uygulama stratejileri için öneriler sunmaktadır.
 
 ---
 
@@ -106,20 +106,3 @@ T5 modeli, **uzun metin özetleme ve çok yönlü doğal dil işleme** görevler
 - [LLM Karşılaştırma Makalesi](https://arxiv.org/abs/2107.02137)
 
 ---
-
-> <span style="color:#2cb67d"><b>Not:</b></span> Tüm deneysel süreç, kod çıktıları ve grafikler ile şeffaf şekilde raporlanmıştır. Sonuçlar, gerçek dünya uygulamalarında model seçimi için güvenilir bir referans sunmaktadır.
-- <b>Bellek ve süre yönetimi</b> büyük modellerde kritik önemdedir. Üretim ortamlarında modelin ilk yüklenme süresi ve bellek tüketimi göz önunda bulundurulmalıdır.
-- <b>Çıktı kalitesi</b>, görev uyumluluğu ile doğrudan ilişkilidir. Yanlış model seçimi, düşük çıktı kalitesine yol açabilir.
-- <b>Pipeline ve memory yönetimi</b> için kodda otomatik CPU/GPU seçimi ve uyarı bastırma gibi profesyonel önlemler alınmalıdır.
-- <b>Hibrit çözümler</b> için model kombinasyonları (ör. önce <span style="color:#ff8906"><b>BERT</b></span> ile analiz, sonra <span style="color:#7f5af0"><b>GPT-2</b></span> ile içerik üretimi) değerlendirilebilir.
-
----
-
-## 📚 Ek Kaynaklar
-
-- [HuggingFace Model Hub](https://huggingface.co/models)
-- [LLM Karşılaştırma Makalesi](https://arxiv.org/abs/2107.02137)
-
----
-
-> <span style="color:#2cb67d"><b>Not:</b></span> Tüm deneysel süreç, kod çıktıları ve grafikler ile şeffaf şekilde raporlanmıştır. Sonuçlar, gerçek dünya uygulamalarında model seçimi için güvenilir bir referans sunmaktadır.
