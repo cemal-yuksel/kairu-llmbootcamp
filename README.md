@@ -7,7 +7,7 @@
 
 <div align="center">
 
-[![Organizasyon](https://img.shields.io/badge/Organizasyon-Kairu-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/company/kairu/)
+[![Organizasyon](https://img.shields.io/badge/Organizasyon-Kairu-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/company/kairuu/)
 [![Durum](https://img.shields.io/badge/Durum-Aktif-brightgreen?style=for-the-badge)](./)
 [![Hafta](https://img.shields.io/badge/İlerleme-3/8-blueviolet?style=for-the-badge)](./)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
@@ -32,8 +32,8 @@
 | :---- | :--- | :---: | :--- |
 | **1** | LLM Temelleri ve Python ile NLP’ye Giriş | ✅ Tamamlandı | [hafta_1/](./hafta_1/) |
 | **2** | Prompt Engineering ve API Tabanlı Kullanım | ✅ Tamamlandı | [hafta_2/](./hafta_2/) |
-| **3** | Hugging Face Transformers Derinlemesine | ➡️ Devam Ediyor | [hafta_3/](./hafta_3/) |
-| **4** | Embedding, Vektör Veritabanları ve Anlamsal Arama | 🔜 Başlanacak | [hafta_4/](./hafta_4/) |
+| **3** | Hugging Face Transformers Derinlemesine | ✅ Tamamlandı | [hafta_3/](./hafta_3/) |
+| **4** | Embedding, Vektör Veritabanları ve Anlamsal Arama | ➡️ Devam Ediyor | [hafta_4/](./hafta_4/) |
 | **5** | LangChain ile Çok Adımlı Uygulama Geliştirme | 🔜 Başlanacak | [hafta_5/](./hafta_5/) |
 | **6** | Fine-Tuning ve Hafif Model Eğitimi (LoRA, QLoRA) | 🔜 Başlanacak | [hafta_6/](./hafta_6/) |
 | **7** | LLM Tabanlı Uygulama Dağıtımı (Deployment) | 🔜 Başlanacak | [hafta_7/](./hafta_7/) |
@@ -185,10 +185,17 @@ kairu-llmbootcamp/
 │   └── turkish_simple.py
 │
 ├── hafta_2/
+<<<<<<< HEAD
 │   ├── 01_prompt_odevleri.ipynb
 │   ├── 02_prompt_odevleri.ipynb
 │   ├── 03_prompt_odevleri.ipynb
 │   ├── 04_prompt_odevleri.ipynb
+=======
+│   ├── 01_zero_shot.py
+│   ├── 02_few_shot.py
+│   ├── 03_chain_of_though.py
+│   ├── 04_role_based.py
+>>>>>>> 8210e4fb73c55d6e346e3d158ee4b197a2f69a28
 │   ├── 05_chatcompletion_api.py
 │   ├── 06_function_calling.py
 │   ├── 07_structured_outputs.py
@@ -203,10 +210,17 @@ kairu-llmbootcamp/
 │   ├── weekly_assignment/
 │   ├── weekly_project/
 │   ├── .gitignore
+<<<<<<< HEAD
 │   ├── 01_autotokenizer_automodel.ipynb
 │   ├── 02_gpt_bert_t5_comparison.ipynb
 │   ├── 03_cpu_gpu_optimization.py
 │   ├── 04_performance_measurement.ipynb
+=======
+│   ├── 01_autotokenizer_automodel.py
+│   ├── 02_gpt_bert_t5_comparison.py
+│   ├── 03_cpu_gpu_optimization.py
+│   ├── 04_performance_measurement.py
+>>>>>>> 8210e4fb73c55d6e346e3d158ee4b197a2f69a28
 │   ├── benchmark_results.json
 │   ├── HOMEWORK.md
 │   ├── quick_test.py
@@ -244,7 +258,11 @@ kairu-llmbootcamp/
 - **turkish_simple.py**: Türkçe dil işleme için basit NLP uygulamaları ve örnekler
 
 #### **hafta_2/** - Prompt Engineering Mastery
+<<<<<<< HEAD
 - **01-04_prompt_odevleri.ipynb**: Sistematik prompt engineering eğitimi (4 aşamalı)
+=======
+- **01-04_prompt_techniques.py**: Sistematik prompt engineering teknikleri (4 aşamalı)
+>>>>>>> 8210e4fb73c55d6e346e3d158ee4b197a2f69a28
 - **05_chatcompletion_api.py**: OpenAI API ile profesyonel chatbot geliştirme
 - **06_function_calling.py**: LLM'leri harici sistemlerle entegre etme teknikleri
 - **07_structured_outputs.py**: JSON ve yapılandırılmış veri üretimi
