@@ -1,0 +1,17 @@
+{
+    "python.defaultInterpreterPath": "./venv/Scripts/python.exe",
+    "python.terminal.activateEnvironment": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "args": [
+                "-ExecutionPolicy",
+                "RemoteSigned",
+                "-NoExit",
+                "-Command",
+                "if (Test-Path '.\\venv\\Scripts\\Activate.ps1') { .\\venv\\Scripts\\Activate.ps1 }"
+            ]
+        }
+    }
+}
