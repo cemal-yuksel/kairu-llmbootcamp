@@ -1,0 +1,902 @@
+2025-10-21 01:15:43,675 - main - ERROR - Error importing components: tokenizers>=0.11.1,!=0.11.3,<0.13 is required for a normal functioning of this module, but found tokenizers==0.21.2.
+Try: pip install transformers -U or pip install -e '.[dev]' if you're working with git main
+2025-10-21 01:16:39,135 - main - ERROR - Error importing components: tokenizers>=0.11.1,!=0.11.3,<0.13 is required for a normal functioning of this module, but found tokenizers==0.21.2.
+Try: pip install transformers -U or pip install -e '.[dev]' if you're working with git main
+2025-10-21 01:19:17,228 - main - ERROR - Error importing components: tokenizers>=0.11.1,!=0.11.3,<0.13 is required for a normal functioning of this module, but found tokenizers==0.21.2.
+Try: pip install transformers -U or pip install -e '.[dev]' if you're working with git main
+2025-10-21 01:21:57,875 - main - ERROR - Error importing components: tokenizers>=0.11.1,!=0.11.3,<0.13 is required for a normal functioning of this module, but found tokenizers==0.21.2.
+Try: pip install transformers -U or pip install -e '.[dev]' if you're working with git main
+2025-10-21 01:25:29,892 - main - INFO - Initializing Advanced Academic Assistant - Session: ui_session_1760999129
+2025-10-21 01:25:30,547 - memory.research_memory - INFO - Research Session Memory initialized for session: ui_session_1760999129
+2025-10-21 01:25:30,547 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:25:30,689 - tools.vector_db - WARNING - SentenceTransformer models not available - using fallback embeddings
+2025-10-21 01:25:30,698 - main - ERROR - Error initializing components: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`.
+2025-10-21 01:25:54,645 - main - INFO - Initializing Advanced Academic Assistant - Session: ui_session_1760999154
+2025-10-21 01:25:54,936 - memory.research_memory - INFO - Research Session Memory initialized for session: ui_session_1760999154
+2025-10-21 01:25:54,936 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:25:55,079 - tools.vector_db - WARNING - SentenceTransformer models not available - using fallback embeddings
+2025-10-21 01:25:55,088 - main - ERROR - Error initializing components: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`.
+2025-10-21 01:29:04,316 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1760999344
+2025-10-21 01:29:04,767 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1760999344
+2025-10-21 01:29:04,767 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:29:04,904 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: emrecan/bert-base-turkish-cased-mean-nli-stsb-tr
+2025-10-21 01:29:18,217 - main - ERROR - Error initializing components: Failed to import transformers.models.bert.modeling_bert because of the following error (look up to see its traceback):
+Failed to import transformers.generation.utils because of the following error (look up to see its traceback):
+cannot import name 'split_torch_state_dict_into_shards' from 'huggingface_hub' (C:\Users\Cemal\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\__init__.py)
+2025-10-21 01:30:13,930 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1760999413
+2025-10-21 01:30:14,365 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1760999413
+2025-10-21 01:30:14,366 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:30:14,504 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: emrecan/bert-base-turkish-cased-mean-nli-stsb-tr
+2025-10-21 01:30:14,844 - main - ERROR - Error initializing components: Failed to import transformers.models.bert.modeling_bert because of the following error (look up to see its traceback):
+Failed to import transformers.generation.utils because of the following error (look up to see its traceback):
+cannot import name 'split_torch_state_dict_into_shards' from 'huggingface_hub' (C:\Users\Cemal\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\__init__.py)
+2025-10-21 01:31:15,096 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1760999475
+2025-10-21 01:31:15,540 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1760999475
+2025-10-21 01:31:15,541 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:31:15,684 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:31:42,103 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:31:42,103 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:31:42,213 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:31:42,213 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:31:42,350 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:31:42,815 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:31:42,923 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 01:31:43,204 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 01:31:43,495 - main - ERROR - Error initializing components: 1 validation error for SequentialChain
+  Value error, Missing required input keys: {'text'}, only had {'main_points', 'sources', 'literature_organization', 'academic_level', 'themes', 'evidence', 'style_improvement', 'target_style', 'text_sample', 'citation_style', 'argument_structure', 'research_topic'} [type=value_error, input_value={'chains': [LLMChain(verb...tion'], 'verbose': True}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/value_error
+2025-10-21 01:32:54,491 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1760999574
+2025-10-21 01:32:54,934 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1760999574
+2025-10-21 01:32:54,935 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:32:55,074 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:32:56,555 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:32:56,555 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:32:56,655 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:32:56,655 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:32:56,767 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:32:56,924 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:32:56,946 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 01:32:57,226 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 01:32:57,506 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 01:32:57,785 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 01:32:57,785 - main - ERROR - Error initializing components: "LiteratureSearchTool" object has no field "crossref_base_url"
+2025-10-21 01:34:45,161 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1760999685
+2025-10-21 01:34:45,591 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1760999685
+2025-10-21 01:34:45,592 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:34:45,730 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:34:47,154 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:34:47,155 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:34:47,257 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:34:47,257 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:34:47,378 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:34:47,549 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:34:47,573 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 01:34:47,857 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 01:34:48,129 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 01:34:48,397 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 01:34:48,397 - main - ERROR - Error initializing components: "LiteratureSearchTool" object has no field "session"
+2025-10-21 01:35:50,996 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1760999750
+2025-10-21 01:35:51,447 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1760999750
+2025-10-21 01:35:51,447 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:35:51,590 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:35:53,184 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:35:53,184 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:35:53,320 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:35:53,320 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:35:53,466 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:35:53,637 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:35:53,657 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 01:35:53,929 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 01:35:54,202 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 01:35:54,481 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 01:35:54,481 - main - ERROR - Error initializing components: "LiteratureSearchTool" object has no field "session"
+2025-10-21 01:41:33,509 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1761000093
+2025-10-21 01:41:33,960 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761000093
+2025-10-21 01:41:33,960 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:41:34,103 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:41:35,572 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:41:35,573 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:41:35,677 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:41:35,677 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:41:35,793 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:41:35,962 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:41:35,984 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 01:41:36,272 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 01:41:36,585 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 01:41:36,869 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 01:41:36,870 - main - INFO - All components initialized successfully
+2025-10-21 01:41:36,870 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761000093
+2025-10-21 01:41:36,870 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 01:43:12,733 - __main__ - INFO - Initializing Advanced Academic Assistant - Session: session_1761000192
+2025-10-21 01:43:13,170 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761000192
+2025-10-21 01:43:13,170 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:43:13,310 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:43:14,729 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:43:14,729 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:43:14,831 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:43:14,831 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:43:14,945 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:43:15,103 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:43:15,124 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 01:43:15,404 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 01:43:15,685 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 01:43:15,963 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 01:43:15,964 - __main__ - INFO - All components initialized successfully
+2025-10-21 01:43:15,964 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761000192
+2025-10-21 01:43:15,964 - __main__ - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 01:43:26,818 - __main__ - INFO - Processing question: <question>
+2025-10-21 01:43:26,978 - tools.vector_db - INFO - Found 0 relevant documents for query
+2025-10-21 01:44:20,505 - main - INFO - Initializing Advanced Academic Assistant - Session: ui_session_1761000260
+2025-10-21 01:44:20,943 - memory.research_memory - INFO - Research Session Memory initialized for session: ui_session_1761000260
+2025-10-21 01:44:20,943 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:44:21,080 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:44:22,564 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:44:22,564 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:44:22,667 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:44:22,668 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:44:22,781 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:44:22,924 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:44:22,945 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 01:44:23,222 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 01:44:23,499 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 01:44:23,774 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 01:44:23,775 - main - INFO - All components initialized successfully
+2025-10-21 01:44:23,775 - streaming.handlers - INFO - Research Streaming Handler initialized for session: ui_session_1761000260
+2025-10-21 01:44:23,775 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 01:45:03,567 - main - INFO - Initializing Advanced Academic Assistant - Session: ui_session_1761000303
+2025-10-21 01:45:03,582 - main - INFO - Initializing Advanced Academic Assistant - Session: ui_session_1761000303
+2025-10-21 01:45:04,000 - memory.research_memory - INFO - Research Session Memory initialized for session: ui_session_1761000303
+2025-10-21 01:45:04,000 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:45:04,024 - memory.research_memory - INFO - Research Session Memory initialized for session: ui_session_1761000303
+2025-10-21 01:45:04,025 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:45:04,221 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:45:04,240 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:45:04,387 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:45:04,387 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:45:04,505 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:45:04,505 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:45:04,530 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:45:04,530 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:45:04,682 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:45:04,683 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:45:04,871 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 01:45:04,883 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 01:45:05,349 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 01:45:05,374 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 01:45:05,806 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 01:45:05,831 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 01:45:06,246 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 01:45:06,247 - main - INFO - All components initialized successfully
+2025-10-21 01:45:06,247 - streaming.handlers - INFO - Research Streaming Handler initialized for session: ui_session_1761000303
+2025-10-21 01:45:06,247 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 01:45:06,481 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 01:45:06,482 - main - INFO - All components initialized successfully
+2025-10-21 01:45:06,482 - streaming.handlers - INFO - Research Streaming Handler initialized for session: ui_session_1761000303
+2025-10-21 01:45:06,482 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 01:46:19,755 - main - INFO - Initializing Advanced Academic Assistant - Session: ui_session_1761000379
+2025-10-21 01:46:20,076 - memory.research_memory - INFO - Research Session Memory initialized for session: ui_session_1761000379
+2025-10-21 01:46:20,076 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:46:20,225 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:46:20,356 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:46:20,356 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:46:20,471 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:46:20,472 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:46:20,681 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 01:46:20,975 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 01:46:21,256 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 01:46:21,544 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 01:46:21,544 - main - INFO - All components initialized successfully
+2025-10-21 01:46:21,545 - streaming.handlers - INFO - Research Streaming Handler initialized for session: ui_session_1761000379
+2025-10-21 01:46:21,545 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 01:46:54,401 - main - INFO - Initializing Advanced Academic Assistant - Session: ui_session_1761000414
+2025-10-21 01:46:54,706 - memory.research_memory - INFO - Research Session Memory initialized for session: ui_session_1761000414
+2025-10-21 01:46:54,706 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:46:54,852 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:46:54,985 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:46:54,985 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:46:55,111 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:46:55,111 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:46:55,285 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 01:46:55,573 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 01:46:55,863 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 01:46:56,151 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 01:46:56,151 - main - INFO - All components initialized successfully
+2025-10-21 01:46:56,151 - streaming.handlers - INFO - Research Streaming Handler initialized for session: ui_session_1761000414
+2025-10-21 01:46:56,151 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 01:47:41,276 - main - INFO - Initializing Advanced Academic Assistant - Session: ui_session_1761000461
+2025-10-21 01:47:41,584 - memory.research_memory - INFO - Research Session Memory initialized for session: ui_session_1761000461
+2025-10-21 01:47:41,584 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:47:41,730 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:47:41,843 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:47:41,843 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:47:41,959 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:47:41,959 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:47:42,135 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 01:47:42,421 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 01:47:42,707 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 01:47:42,991 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 01:47:42,991 - main - INFO - All components initialized successfully
+2025-10-21 01:47:42,992 - streaming.handlers - INFO - Research Streaming Handler initialized for session: ui_session_1761000461
+2025-10-21 01:47:42,992 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 01:50:12,971 - main - INFO - Initializing Advanced Academic Assistant - Session: ui_session_1761000612
+2025-10-21 01:50:13,435 - memory.research_memory - INFO - Research Session Memory initialized for session: ui_session_1761000612
+2025-10-21 01:50:13,435 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 01:50:13,574 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:50:15,062 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:50:15,063 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:50:15,171 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 01:50:15,171 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 01:50:15,293 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:50:15,450 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 01:50:15,511 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 01:50:15,800 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 01:50:16,072 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 01:50:16,349 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 01:50:16,350 - main - INFO - All components initialized successfully
+2025-10-21 01:50:16,350 - streaming.handlers - INFO - Research Streaming Handler initialized for session: ui_session_1761000612
+2025-10-21 01:50:16,350 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 02:02:25,404 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1761001345
+2025-10-21 02:02:25,847 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761001345
+2025-10-21 02:02:25,847 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 02:02:25,987 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:02:27,417 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:02:27,418 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:02:27,522 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:02:27,522 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:02:27,636 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 02:02:27,796 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 02:02:27,815 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 02:02:28,089 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 02:02:28,364 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 02:02:28,646 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 02:02:28,646 - main - INFO - All components initialized successfully
+2025-10-21 02:02:28,647 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761001345
+2025-10-21 02:02:28,647 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 02:03:30,889 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1761001410
+2025-10-21 02:03:31,321 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761001410
+2025-10-21 02:03:31,321 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 02:03:31,462 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:03:32,869 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:03:32,869 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:03:32,971 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:03:32,971 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:03:33,085 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 02:03:33,425 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 02:03:33,454 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 02:03:33,741 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 02:03:34,021 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 02:03:34,298 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 02:03:34,299 - main - INFO - All components initialized successfully
+2025-10-21 02:03:34,299 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761001410
+2025-10-21 02:03:34,299 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 02:04:20,788 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1761001460
+2025-10-21 02:04:20,801 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1761001460
+2025-10-21 02:04:21,260 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761001460
+2025-10-21 02:04:21,261 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 02:04:21,270 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761001460
+2025-10-21 02:04:21,271 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 02:04:21,481 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:04:21,488 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:04:21,649 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:04:21,649 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:04:21,770 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:04:21,770 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:04:21,788 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:04:21,789 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:04:21,937 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:04:21,937 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:04:22,111 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 02:04:22,121 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 02:04:22,552 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 02:04:22,563 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 02:04:22,995 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 02:04:23,009 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 02:04:23,435 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 02:04:23,436 - main - INFO - All components initialized successfully
+2025-10-21 02:04:23,436 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761001460
+2025-10-21 02:04:23,436 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 02:04:23,644 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 02:04:23,646 - main - INFO - All components initialized successfully
+2025-10-21 02:04:23,646 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761001460
+2025-10-21 02:04:23,646 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 02:33:16,189 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1761003196
+2025-10-21 02:33:16,632 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761003196
+2025-10-21 02:33:16,632 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 02:33:16,773 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:33:18,382 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:33:18,382 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:33:18,485 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:33:18,485 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:33:18,641 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 02:33:19,051 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 02:33:19,073 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 02:33:19,363 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 02:33:19,641 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 02:33:19,920 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 02:33:19,920 - main - INFO - All components initialized successfully
+2025-10-21 02:33:19,921 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761003196
+2025-10-21 02:33:19,921 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 02:33:30,588 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1761003210
+2025-10-21 02:33:30,602 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1761003210
+2025-10-21 02:33:31,023 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761003210
+2025-10-21 02:33:31,023 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 02:33:31,041 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761003210
+2025-10-21 02:33:31,042 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 02:33:31,244 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:33:31,257 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:33:31,429 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:33:31,429 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:33:31,552 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:33:31,553 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:33:31,580 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:33:31,581 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:33:31,768 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:33:31,768 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:33:31,844 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 02:33:31,960 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 02:33:32,254 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 02:33:32,407 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 02:33:32,697 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 02:33:32,853 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 02:33:33,141 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 02:33:33,141 - main - INFO - All components initialized successfully
+2025-10-21 02:33:33,141 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761003210
+2025-10-21 02:33:33,141 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 02:33:33,337 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 02:33:33,342 - main - INFO - All components initialized successfully
+2025-10-21 02:33:33,342 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761003210
+2025-10-21 02:33:33,342 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 02:33:59,996 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:34:00,014 - tools.pdf_manager - WARNING - Could not parse LLM metadata response as JSON
+2025-10-21 02:34:00,015 - tools.pdf_manager - INFO - Metadata saved to C:\Users\Cemal\OneDrive\Desktop\2025\Eğitimler\Kairu\Build with LLMs Bootcamp\kairu-llmbootcamp\hafta_5\AkademikMakaleAsistani_v2\data\metadata.json
+2025-10-21 02:34:00,016 - tools.pdf_manager - INFO - PDF saved successfully: Başlık çıkarılamadı.pdf
+2025-10-21 02:34:00,016 - main - INFO - Processing document: C:\Users\Cemal\OneDrive\Desktop\2025\Eğitimler\Kairu\Build with LLMs Bootcamp\kairu-llmbootcamp\hafta_5\AkademikMakaleAsistani_v2\pdfs\Başlık çıkarılamadı.pdf
+2025-10-21 02:34:02,165 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:34:02,181 - tools.pdf_manager - INFO - Metadata saved to C:\Users\Cemal\OneDrive\Desktop\2025\Eğitimler\Kairu\Build with LLMs Bootcamp\kairu-llmbootcamp\hafta_5\AkademikMakaleAsistani_v2\data\metadata.json
+2025-10-21 02:34:02,182 - tools.pdf_manager - INFO - Processed PDF: Başlık çıkarılamadı.pdf - Title: A counterinsurgent (COIN) framework to defend against consumer activists
+2025-10-21 02:34:02,183 - tools.vector_db - INFO - Split document into 126 chunks
+2025-10-21 02:34:05,522 - tools.vector_db - INFO - Added 126 chunks to vector database for Başlık çıkarılamadı.pdf
+2025-10-21 02:34:05,522 - chains.research_chains - INFO - Starting research analysis for: A counterinsurgent (COIN) framework to defend against consumer activists
+2025-10-21 02:34:05,525 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:34:05,525 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:34:05,526 - streaming.handlers - INFO - LLM generation started for session: session_1761003196
+2025-10-21 02:34:08,097 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:34:08,103 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 2.58s
+2025-10-21 02:34:08,103 - streaming.handlers - INFO - Chain completed:  (1/0)
+2025-10-21 02:34:08,104 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:34:08,104 - streaming.handlers - INFO - LLM generation started for session: session_1761003196
+2025-10-21 02:34:15,657 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:34:15,673 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 7.57s
+2025-10-21 02:34:15,673 - streaming.handlers - INFO - Chain completed:  (2/0)
+2025-10-21 02:34:15,673 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:34:15,674 - streaming.handlers - INFO - LLM generation started for session: session_1761003196
+2025-10-21 02:34:31,068 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1761003271
+2025-10-21 02:34:31,373 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761003271
+2025-10-21 02:34:31,374 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 02:34:31,513 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:34:31,645 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:34:31,645 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:34:31,748 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:34:31,748 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:34:31,903 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 02:34:32,022 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:34:32,029 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 16.36s
+2025-10-21 02:34:32,030 - streaming.handlers - INFO - Chain completed:  (3/0)
+2025-10-21 02:34:32,030 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:34:32,030 - streaming.handlers - INFO - LLM generation started for session: session_1761003196
+2025-10-21 02:34:32,179 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 02:34:32,454 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 02:34:32,725 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 02:34:32,726 - main - INFO - All components initialized successfully
+2025-10-21 02:34:32,726 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761003271
+2025-10-21 02:34:32,726 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 02:34:38,656 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:34:38,663 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 6.63s
+2025-10-21 02:34:38,663 - streaming.handlers - INFO - Chain completed:  (4/0)
+2025-10-21 02:34:38,664 - streaming.handlers - INFO - Chain completed:  (5/0)
+2025-10-21 02:34:38,664 - chains.research_chains - INFO - Research analysis completed successfully
+2025-10-21 02:34:38,664 - chains.analysis_chains - INFO - Starting comprehensive analysis for: A counterinsurgent (COIN) framework to defend against consumer activists
+2025-10-21 02:34:38,665 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:34:38,665 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:34:38,666 - streaming.handlers - INFO - LLM generation started for session: session_1761003196
+2025-10-21 02:34:49,901 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:34:49,903 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 11.24s
+2025-10-21 02:34:49,903 - streaming.handlers - INFO - Chain completed:  (6/0)
+2025-10-21 02:34:49,903 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:34:49,904 - streaming.handlers - INFO - LLM generation started for session: session_1761003196
+2025-10-21 02:34:57,777 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:34:57,781 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 7.88s
+2025-10-21 02:34:57,782 - streaming.handlers - INFO - Chain completed:  (7/0)
+2025-10-21 02:34:57,782 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:34:57,782 - streaming.handlers - INFO - LLM generation started for session: session_1761003196
+2025-10-21 02:35:11,267 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:35:11,279 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 13.50s
+2025-10-21 02:35:11,280 - streaming.handlers - INFO - Chain completed:  (8/0)
+2025-10-21 02:35:11,280 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:35:11,281 - streaming.handlers - INFO - LLM generation started for session: session_1761003196
+2025-10-21 02:35:13,408 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1761003313
+2025-10-21 02:35:13,705 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761003313
+2025-10-21 02:35:13,705 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 02:35:13,845 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:35:13,959 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:35:13,959 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:35:14,063 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:35:14,063 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:35:14,227 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 02:35:14,531 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 02:35:14,830 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 02:35:15,303 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 02:35:15,303 - main - INFO - All components initialized successfully
+2025-10-21 02:35:15,303 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761003313
+2025-10-21 02:35:15,303 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 02:35:19,473 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:35:19,475 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 8.19s
+2025-10-21 02:35:19,475 - streaming.handlers - INFO - Chain completed:  (9/0)
+2025-10-21 02:35:19,475 - streaming.handlers - INFO - Chain completed:  (10/0)
+2025-10-21 02:35:19,476 - chains.analysis_chains - INFO - Comprehensive analysis completed successfully
+2025-10-21 02:35:19,485 - memory.research_memory - INFO - Added interaction to memory for session: session_1761003196
+2025-10-21 02:35:19,485 - main - INFO - Document processing completed: Başlık çıkarılamadı.pdf
+2025-10-21 02:37:02,307 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1761003422
+2025-10-21 02:37:02,610 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761003422
+2025-10-21 02:37:02,611 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 02:37:02,754 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:37:02,862 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:37:02,862 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:37:02,968 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:37:02,968 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 02:37:03,180 - tools.vector_db - INFO - Vector DB initialized with models: all-MiniLM-L6-v2
+2025-10-21 02:37:03,489 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 02:37:03,763 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 02:37:04,036 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 02:37:04,036 - main - INFO - All components initialized successfully
+2025-10-21 02:37:04,036 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761003422
+2025-10-21 02:37:04,036 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 02:37:28,042 - tools.pdf_manager - INFO - Metadata saved to C:\Users\Cemal\OneDrive\Desktop\2025\Eğitimler\Kairu\Build with LLMs Bootcamp\kairu-llmbootcamp\hafta_5\AkademikMakaleAsistani_v2\data\metadata.json
+2025-10-21 02:37:28,043 - tools.pdf_manager - INFO - PDF deleted successfully: Başlık çıkarılamadı.pdf
+2025-10-21 02:42:43,932 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1761003763
+2025-10-21 02:42:44,345 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761003763
+2025-10-21 02:42:44,346 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 02:42:44,505 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L3-v2
+2025-10-21 02:43:06,238 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:43:06,238 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L3-v2
+2025-10-21 02:43:06,320 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:43:06,320 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L3-v2
+2025-10-21 02:43:06,415 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 02:43:06,583 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 02:43:06,606 - tools.vector_db - INFO - Vector DB initialized with models: paraphrase-MiniLM-L3-v2
+2025-10-21 02:43:06,912 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 02:43:07,190 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 02:43:07,503 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 02:43:07,503 - main - INFO - All components initialized successfully
+2025-10-21 02:43:07,503 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761003763
+2025-10-21 02:43:07,503 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 02:45:09,771 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:45:09,778 - tools.pdf_manager - WARNING - Could not parse LLM metadata response as JSON
+2025-10-21 02:45:09,780 - tools.pdf_manager - INFO - Metadata saved to C:\Users\Cemal\OneDrive\Desktop\2025\Eğitimler\Kairu\Build with LLMs Bootcamp\kairu-llmbootcamp\hafta_5\AkademikMakaleAsistani_v2\data\metadata.json
+2025-10-21 02:45:09,780 - tools.pdf_manager - INFO - PDF saved successfully: Başlık çıkarılamadı.pdf
+2025-10-21 02:45:09,780 - main - INFO - Processing document: C:\Users\Cemal\OneDrive\Desktop\2025\Eğitimler\Kairu\Build with LLMs Bootcamp\kairu-llmbootcamp\hafta_5\AkademikMakaleAsistani_v2\pdfs\Başlık çıkarılamadı.pdf
+2025-10-21 02:45:11,726 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:45:11,736 - tools.pdf_manager - INFO - Metadata saved to C:\Users\Cemal\OneDrive\Desktop\2025\Eğitimler\Kairu\Build with LLMs Bootcamp\kairu-llmbootcamp\hafta_5\AkademikMakaleAsistani_v2\data\metadata.json
+2025-10-21 02:45:11,736 - tools.pdf_manager - INFO - Processed PDF: Başlık çıkarılamadı.pdf - Title: A counterinsurgent (COIN) framework to defend against consumer activists
+2025-10-21 02:45:11,738 - tools.vector_db - INFO - Split document into 126 chunks
+2025-10-21 02:45:12,173 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_0
+2025-10-21 02:45:12,174 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_1
+2025-10-21 02:45:12,174 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_2
+2025-10-21 02:45:12,174 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_3
+2025-10-21 02:45:12,175 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_4
+2025-10-21 02:45:12,175 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_5
+2025-10-21 02:45:12,175 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_6
+2025-10-21 02:45:12,175 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_7
+2025-10-21 02:45:12,176 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_8
+2025-10-21 02:45:12,176 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_9
+2025-10-21 02:45:12,176 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_10
+2025-10-21 02:45:12,176 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_11
+2025-10-21 02:45:12,176 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_12
+2025-10-21 02:45:12,176 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_13
+2025-10-21 02:45:12,177 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_14
+2025-10-21 02:45:12,177 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_15
+2025-10-21 02:45:12,177 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_16
+2025-10-21 02:45:12,177 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_17
+2025-10-21 02:45:12,177 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_18
+2025-10-21 02:45:12,178 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_19
+2025-10-21 02:45:12,178 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_20
+2025-10-21 02:45:12,178 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_21
+2025-10-21 02:45:12,179 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_22
+2025-10-21 02:45:12,179 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_23
+2025-10-21 02:45:12,179 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_24
+2025-10-21 02:45:12,179 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_25
+2025-10-21 02:45:12,180 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_26
+2025-10-21 02:45:12,180 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_27
+2025-10-21 02:45:12,180 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_28
+2025-10-21 02:45:12,180 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_29
+2025-10-21 02:45:12,181 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_30
+2025-10-21 02:45:12,181 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_31
+2025-10-21 02:45:12,181 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_32
+2025-10-21 02:45:12,181 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_33
+2025-10-21 02:45:12,181 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_34
+2025-10-21 02:45:12,182 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_35
+2025-10-21 02:45:12,182 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_36
+2025-10-21 02:45:12,182 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_37
+2025-10-21 02:45:12,182 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_38
+2025-10-21 02:45:12,183 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_39
+2025-10-21 02:45:12,183 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_40
+2025-10-21 02:45:12,183 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_41
+2025-10-21 02:45:12,183 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_42
+2025-10-21 02:45:12,183 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_43
+2025-10-21 02:45:12,184 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_44
+2025-10-21 02:45:12,184 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_45
+2025-10-21 02:45:12,184 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_46
+2025-10-21 02:45:12,184 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_47
+2025-10-21 02:45:12,184 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_48
+2025-10-21 02:45:12,185 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_49
+2025-10-21 02:45:12,185 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_50
+2025-10-21 02:45:12,185 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_51
+2025-10-21 02:45:12,185 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_52
+2025-10-21 02:45:12,186 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_53
+2025-10-21 02:45:12,186 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_54
+2025-10-21 02:45:12,186 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_55
+2025-10-21 02:45:12,187 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_56
+2025-10-21 02:45:12,187 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_57
+2025-10-21 02:45:12,187 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_58
+2025-10-21 02:45:12,188 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_59
+2025-10-21 02:45:12,188 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_60
+2025-10-21 02:45:12,188 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_61
+2025-10-21 02:45:12,188 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_62
+2025-10-21 02:45:12,188 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_63
+2025-10-21 02:45:12,188 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_64
+2025-10-21 02:45:12,189 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_65
+2025-10-21 02:45:12,189 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_66
+2025-10-21 02:45:12,189 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_67
+2025-10-21 02:45:12,189 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_68
+2025-10-21 02:45:12,190 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_69
+2025-10-21 02:45:12,190 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_70
+2025-10-21 02:45:12,190 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_71
+2025-10-21 02:45:12,190 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_72
+2025-10-21 02:45:12,190 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_73
+2025-10-21 02:45:12,191 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_74
+2025-10-21 02:45:12,191 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_75
+2025-10-21 02:45:12,191 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_76
+2025-10-21 02:45:12,191 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_77
+2025-10-21 02:45:12,192 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_78
+2025-10-21 02:45:12,192 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_79
+2025-10-21 02:45:12,192 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_80
+2025-10-21 02:45:12,192 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_81
+2025-10-21 02:45:12,193 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_82
+2025-10-21 02:45:12,193 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_83
+2025-10-21 02:45:12,193 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_84
+2025-10-21 02:45:12,194 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_85
+2025-10-21 02:45:12,194 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_86
+2025-10-21 02:45:12,194 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_87
+2025-10-21 02:45:12,194 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_88
+2025-10-21 02:45:12,195 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_89
+2025-10-21 02:45:12,195 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_90
+2025-10-21 02:45:12,195 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_91
+2025-10-21 02:45:12,196 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_92
+2025-10-21 02:45:12,196 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_93
+2025-10-21 02:45:12,196 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_94
+2025-10-21 02:45:12,196 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_95
+2025-10-21 02:45:12,196 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_96
+2025-10-21 02:45:12,197 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_97
+2025-10-21 02:45:12,197 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_98
+2025-10-21 02:45:12,197 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_99
+2025-10-21 02:45:12,197 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_100
+2025-10-21 02:45:12,197 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_101
+2025-10-21 02:45:12,197 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_102
+2025-10-21 02:45:12,198 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_103
+2025-10-21 02:45:12,198 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_104
+2025-10-21 02:45:12,198 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_105
+2025-10-21 02:45:12,198 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_106
+2025-10-21 02:45:12,199 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_107
+2025-10-21 02:45:12,199 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_108
+2025-10-21 02:45:12,199 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_109
+2025-10-21 02:45:12,200 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_110
+2025-10-21 02:45:12,200 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_111
+2025-10-21 02:45:12,200 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_112
+2025-10-21 02:45:12,200 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_113
+2025-10-21 02:45:12,201 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_114
+2025-10-21 02:45:12,201 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_115
+2025-10-21 02:45:12,201 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_116
+2025-10-21 02:45:12,201 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_117
+2025-10-21 02:45:12,202 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_118
+2025-10-21 02:45:12,202 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_119
+2025-10-21 02:45:12,202 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_120
+2025-10-21 02:45:12,202 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_121
+2025-10-21 02:45:12,202 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_122
+2025-10-21 02:45:12,202 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_123
+2025-10-21 02:45:12,203 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_124
+2025-10-21 02:45:12,203 - chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_125
+2025-10-21 02:45:12,203 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_0
+2025-10-21 02:45:12,203 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_1
+2025-10-21 02:45:12,203 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_2
+2025-10-21 02:45:12,203 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_3
+2025-10-21 02:45:12,204 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_4
+2025-10-21 02:45:12,204 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_5
+2025-10-21 02:45:12,204 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_6
+2025-10-21 02:45:12,204 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_7
+2025-10-21 02:45:12,204 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_8
+2025-10-21 02:45:12,204 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_9
+2025-10-21 02:45:12,204 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_10
+2025-10-21 02:45:12,205 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_11
+2025-10-21 02:45:12,205 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_12
+2025-10-21 02:45:12,205 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_13
+2025-10-21 02:45:12,205 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_14
+2025-10-21 02:45:12,205 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_15
+2025-10-21 02:45:12,205 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_16
+2025-10-21 02:45:12,205 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_17
+2025-10-21 02:45:12,205 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_18
+2025-10-21 02:45:12,206 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_19
+2025-10-21 02:45:12,206 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_20
+2025-10-21 02:45:12,206 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_21
+2025-10-21 02:45:12,206 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_22
+2025-10-21 02:45:12,206 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_23
+2025-10-21 02:45:12,206 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_24
+2025-10-21 02:45:12,206 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_25
+2025-10-21 02:45:12,207 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_26
+2025-10-21 02:45:12,207 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_27
+2025-10-21 02:45:12,207 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_28
+2025-10-21 02:45:12,207 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_29
+2025-10-21 02:45:12,207 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_30
+2025-10-21 02:45:12,207 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_31
+2025-10-21 02:45:12,207 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_32
+2025-10-21 02:45:12,208 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_33
+2025-10-21 02:45:12,208 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_34
+2025-10-21 02:45:12,208 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_35
+2025-10-21 02:45:12,208 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_36
+2025-10-21 02:45:12,208 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_37
+2025-10-21 02:45:12,208 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_38
+2025-10-21 02:45:12,208 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_39
+2025-10-21 02:45:12,209 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_40
+2025-10-21 02:45:12,209 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_41
+2025-10-21 02:45:12,209 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_42
+2025-10-21 02:45:12,209 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_43
+2025-10-21 02:45:12,209 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_44
+2025-10-21 02:45:12,209 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_45
+2025-10-21 02:45:12,209 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_46
+2025-10-21 02:45:12,210 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_47
+2025-10-21 02:45:12,210 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_48
+2025-10-21 02:45:12,210 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_49
+2025-10-21 02:45:12,210 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_50
+2025-10-21 02:45:12,210 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_51
+2025-10-21 02:45:12,210 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_52
+2025-10-21 02:45:12,210 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_53
+2025-10-21 02:45:12,211 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_54
+2025-10-21 02:45:12,211 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_55
+2025-10-21 02:45:12,211 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_56
+2025-10-21 02:45:12,211 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_57
+2025-10-21 02:45:12,211 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_58
+2025-10-21 02:45:12,211 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_59
+2025-10-21 02:45:12,211 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_60
+2025-10-21 02:45:12,212 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_61
+2025-10-21 02:45:12,212 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_62
+2025-10-21 02:45:12,212 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_63
+2025-10-21 02:45:12,212 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_64
+2025-10-21 02:45:12,212 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_65
+2025-10-21 02:45:12,212 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_66
+2025-10-21 02:45:12,212 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_67
+2025-10-21 02:45:12,212 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_68
+2025-10-21 02:45:12,213 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_69
+2025-10-21 02:45:12,213 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_70
+2025-10-21 02:45:12,213 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_71
+2025-10-21 02:45:12,213 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_72
+2025-10-21 02:45:12,213 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_73
+2025-10-21 02:45:12,213 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_74
+2025-10-21 02:45:12,213 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_75
+2025-10-21 02:45:12,213 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_76
+2025-10-21 02:45:12,213 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_77
+2025-10-21 02:45:12,213 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_78
+2025-10-21 02:45:12,214 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_79
+2025-10-21 02:45:12,214 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_80
+2025-10-21 02:45:12,214 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_81
+2025-10-21 02:45:12,214 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_82
+2025-10-21 02:45:12,214 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_83
+2025-10-21 02:45:12,214 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_84
+2025-10-21 02:45:12,214 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_85
+2025-10-21 02:45:12,214 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_86
+2025-10-21 02:45:12,215 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_87
+2025-10-21 02:45:12,215 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_88
+2025-10-21 02:45:12,215 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_89
+2025-10-21 02:45:12,215 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_90
+2025-10-21 02:45:12,215 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_91
+2025-10-21 02:45:12,215 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_92
+2025-10-21 02:45:12,215 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_93
+2025-10-21 02:45:12,215 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_94
+2025-10-21 02:45:12,216 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_95
+2025-10-21 02:45:12,216 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_96
+2025-10-21 02:45:12,216 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_97
+2025-10-21 02:45:12,216 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_98
+2025-10-21 02:45:12,216 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_99
+2025-10-21 02:45:12,216 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_100
+2025-10-21 02:45:12,216 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_101
+2025-10-21 02:45:12,217 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_102
+2025-10-21 02:45:12,217 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_103
+2025-10-21 02:45:12,217 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_104
+2025-10-21 02:45:12,217 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_105
+2025-10-21 02:45:12,217 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_106
+2025-10-21 02:45:12,217 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_107
+2025-10-21 02:45:12,217 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_108
+2025-10-21 02:45:12,217 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_109
+2025-10-21 02:45:12,218 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_110
+2025-10-21 02:45:12,218 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_111
+2025-10-21 02:45:12,218 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_112
+2025-10-21 02:45:12,218 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_113
+2025-10-21 02:45:12,218 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_114
+2025-10-21 02:45:12,218 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_115
+2025-10-21 02:45:12,218 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_116
+2025-10-21 02:45:12,218 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_117
+2025-10-21 02:45:12,218 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_118
+2025-10-21 02:45:12,219 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_119
+2025-10-21 02:45:12,219 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_120
+2025-10-21 02:45:12,219 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_121
+2025-10-21 02:45:12,219 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_122
+2025-10-21 02:45:12,219 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_123
+2025-10-21 02:45:12,220 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_124
+2025-10-21 02:45:12,220 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: Başlık çıkarılamadı.pdf_chunk_125
+2025-10-21 02:45:12,692 - tools.vector_db - INFO - Added 126 chunks to vector database for Başlık çıkarılamadı.pdf
+2025-10-21 02:45:12,693 - chains.research_chains - INFO - Starting research analysis for: A counterinsurgent (COIN) framework to defend against consumer activists
+2025-10-21 02:45:12,694 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:45:12,694 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:45:12,695 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:45:16,439 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:45:16,457 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 3.76s
+2025-10-21 02:45:16,457 - streaming.handlers - INFO - Chain completed:  (1/0)
+2025-10-21 02:45:16,457 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:45:16,457 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:45:24,572 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:45:24,580 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 8.12s
+2025-10-21 02:45:24,580 - streaming.handlers - INFO - Chain completed:  (2/0)
+2025-10-21 02:45:24,580 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:45:24,581 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:45:37,758 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:45:37,761 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 13.18s
+2025-10-21 02:45:37,761 - streaming.handlers - INFO - Chain completed:  (3/0)
+2025-10-21 02:45:37,761 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:45:37,762 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:45:49,879 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:45:49,891 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 12.13s
+2025-10-21 02:45:49,891 - streaming.handlers - INFO - Chain completed:  (4/0)
+2025-10-21 02:45:49,891 - streaming.handlers - INFO - Chain completed:  (5/0)
+2025-10-21 02:45:49,892 - chains.research_chains - INFO - Research analysis completed successfully
+2025-10-21 02:45:49,892 - chains.analysis_chains - INFO - Starting comprehensive analysis for: A counterinsurgent (COIN) framework to defend against consumer activists
+2025-10-21 02:45:49,892 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:45:49,892 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:45:49,893 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:45:57,322 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:45:57,330 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 7.44s
+2025-10-21 02:45:57,330 - streaming.handlers - INFO - Chain completed:  (6/0)
+2025-10-21 02:45:57,331 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:45:57,331 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:46:16,048 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:46:16,056 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 18.72s
+2025-10-21 02:46:16,056 - streaming.handlers - INFO - Chain completed:  (7/0)
+2025-10-21 02:46:16,057 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:46:16,057 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:46:32,828 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:46:32,831 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 16.77s
+2025-10-21 02:46:32,831 - chains.analysis_chains - WARNING - Error parsing analysis output: Expecting property name enclosed in double quotes: line 3 column 33 (char 60)
+2025-10-21 02:46:32,831 - streaming.handlers - INFO - Chain completed:  (8/0)
+2025-10-21 02:46:32,831 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:46:32,832 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:46:39,423 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:46:39,435 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 6.60s
+2025-10-21 02:46:39,435 - streaming.handlers - INFO - Chain completed:  (9/0)
+2025-10-21 02:46:39,435 - streaming.handlers - INFO - Chain completed:  (10/0)
+2025-10-21 02:46:39,435 - chains.analysis_chains - INFO - Comprehensive analysis completed successfully
+2025-10-21 02:46:39,438 - memory.research_memory - INFO - Added interaction to memory for session: session_1761003763
+2025-10-21 02:46:39,438 - main - INFO - Document processing completed: Başlık çıkarılamadı.pdf
+2025-10-21 02:46:56,920 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:46:56,926 - tools.pdf_manager - WARNING - Could not parse LLM metadata response as JSON
+2025-10-21 02:46:56,928 - tools.pdf_manager - INFO - Metadata saved to C:\Users\Cemal\OneDrive\Desktop\2025\Eğitimler\Kairu\Build with LLMs Bootcamp\kairu-llmbootcamp\hafta_5\AkademikMakaleAsistani_v2\data\metadata.json
+2025-10-21 02:46:56,929 - tools.pdf_manager - INFO - PDF saved successfully: Başlık çıkarılamadı_1.pdf
+2025-10-21 02:46:56,929 - main - INFO - Processing document: C:\Users\Cemal\OneDrive\Desktop\2025\Eğitimler\Kairu\Build with LLMs Bootcamp\kairu-llmbootcamp\hafta_5\AkademikMakaleAsistani_v2\pdfs\Başlık çıkarılamadı_1.pdf
+2025-10-21 02:46:58,288 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:46:58,308 - tools.pdf_manager - INFO - Metadata saved to C:\Users\Cemal\OneDrive\Desktop\2025\Eğitimler\Kairu\Build with LLMs Bootcamp\kairu-llmbootcamp\hafta_5\AkademikMakaleAsistani_v2\data\metadata.json
+2025-10-21 02:46:58,308 - tools.pdf_manager - INFO - Processed PDF: Başlık çıkarılamadı_1.pdf - Title: Advanced Sentiment Analysis Models for Crisis-Time Brand Trust Monitoring and Recovery
+2025-10-21 02:46:58,309 - tools.vector_db - INFO - Split document into 57 chunks
+2025-10-21 02:46:58,724 - tools.vector_db - INFO - Added 57 chunks to vector database for Başlık çıkarılamadı_1.pdf
+2025-10-21 02:46:58,724 - chains.research_chains - INFO - Starting research analysis for: Advanced Sentiment Analysis Models for Crisis-Time Brand Trust Monitoring and Recovery
+2025-10-21 02:46:58,725 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:46:58,725 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:46:58,726 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:47:06,835 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:47:06,841 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 8.12s
+2025-10-21 02:47:06,842 - streaming.handlers - INFO - Chain completed:  (11/0)
+2025-10-21 02:47:06,842 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:47:06,842 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:47:10,651 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:47:10,657 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 3.82s
+2025-10-21 02:47:10,658 - streaming.handlers - INFO - Chain completed:  (12/0)
+2025-10-21 02:47:10,658 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:47:10,658 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:47:22,568 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:47:22,584 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 11.93s
+2025-10-21 02:47:22,584 - streaming.handlers - INFO - Chain completed:  (13/0)
+2025-10-21 02:47:22,585 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:47:22,585 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:47:36,019 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:47:36,032 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 13.45s
+2025-10-21 02:47:36,033 - streaming.handlers - INFO - Chain completed:  (14/0)
+2025-10-21 02:47:36,033 - streaming.handlers - INFO - Chain completed:  (15/0)
+2025-10-21 02:47:36,033 - chains.research_chains - INFO - Research analysis completed successfully
+2025-10-21 02:47:36,033 - chains.analysis_chains - INFO - Starting comprehensive analysis for: Advanced Sentiment Analysis Models for Crisis-Time Brand Trust Monitoring and Recovery
+2025-10-21 02:47:36,033 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:47:36,034 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:47:36,034 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:47:41,721 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:47:41,738 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 5.70s
+2025-10-21 02:47:41,739 - streaming.handlers - INFO - Chain completed:  (16/0)
+2025-10-21 02:47:41,739 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:47:41,740 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:47:55,766 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:47:55,771 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 14.03s
+2025-10-21 02:47:55,772 - streaming.handlers - INFO - Chain completed:  (17/0)
+2025-10-21 02:47:55,772 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:47:55,772 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:48:10,007 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:48:10,008 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 14.24s
+2025-10-21 02:48:10,008 - streaming.handlers - INFO - Chain completed:  (18/0)
+2025-10-21 02:48:10,008 - langchain_core.callbacks.manager - WARNING - Error in ResearchStreamingHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+2025-10-21 02:48:10,009 - streaming.handlers - INFO - LLM generation started for session: session_1761003763
+2025-10-21 02:48:14,442 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:48:14,450 - streaming.handlers - INFO - LLM generation completed. Tokens: 0, Duration: 4.44s
+2025-10-21 02:48:14,450 - streaming.handlers - INFO - Chain completed:  (19/0)
+2025-10-21 02:48:14,451 - streaming.handlers - INFO - Chain completed:  (20/0)
+2025-10-21 02:48:14,451 - chains.analysis_chains - INFO - Comprehensive analysis completed successfully
+2025-10-21 02:48:14,465 - memory.research_memory - INFO - Added interaction to memory for session: session_1761003763
+2025-10-21 02:48:14,465 - main - INFO - Document processing completed: Başlık çıkarılamadı_1.pdf
+2025-10-21 02:49:16,217 - tools.article_analyzer - INFO - Starting comprehensive analysis for: Başlık çıkarılamadı.pdf
+2025-10-21 02:49:32,673 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:49:42,984 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:49:53,995 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:49:58,210 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-21 02:49:58,227 - tools.article_analyzer - INFO - Comprehensive analysis completed for: Başlık çıkarılamadı.pdf
+2025-10-21 02:50:36,964 - tools.pdf_manager - INFO - Metadata saved to C:\Users\Cemal\OneDrive\Desktop\2025\Eğitimler\Kairu\Build with LLMs Bootcamp\kairu-llmbootcamp\hafta_5\AkademikMakaleAsistani_v2\data\metadata.json
+2025-10-21 02:50:36,964 - tools.pdf_manager - INFO - PDF deleted successfully: Başlık çıkarılamadı.pdf
+2025-10-21 02:50:36,973 - tools.pdf_manager - INFO - Metadata saved to C:\Users\Cemal\OneDrive\Desktop\2025\Eğitimler\Kairu\Build with LLMs Bootcamp\kairu-llmbootcamp\hafta_5\AkademikMakaleAsistani_v2\data\metadata.json
+2025-10-21 02:50:36,981 - tools.pdf_manager - INFO - PDF deleted successfully: Başlık çıkarılamadı_1.pdf
+2025-10-21 02:50:43,236 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1761004243
+2025-10-21 02:50:43,533 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761004243
+2025-10-21 02:50:43,534 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 02:50:43,678 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L3-v2
+2025-10-21 02:50:43,761 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:50:43,762 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L3-v2
+2025-10-21 02:50:43,854 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 02:50:43,854 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L3-v2
+2025-10-21 02:50:44,064 - tools.vector_db - INFO - Vector DB initialized with models: paraphrase-MiniLM-L3-v2
+2025-10-21 02:50:44,355 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 02:50:44,643 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 02:50:44,981 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 02:50:44,982 - main - INFO - All components initialized successfully
+2025-10-21 02:50:44,982 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761004243
+2025-10-21 02:50:44,982 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 03:27:00,621 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1761006420
+2025-10-21 03:27:01,027 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761006420
+2025-10-21 03:27:01,027 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 03:27:01,164 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L3-v2
+2025-10-21 03:27:02,554 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 03:27:02,554 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L3-v2
+2025-10-21 03:27:02,633 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 03:27:02,634 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L3-v2
+2025-10-21 03:27:02,725 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 03:27:02,867 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-21 03:27:02,888 - tools.vector_db - INFO - Vector DB initialized with models: paraphrase-MiniLM-L3-v2
+2025-10-21 03:27:03,158 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 03:27:03,424 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 03:27:03,690 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 03:27:03,690 - main - INFO - All components initialized successfully
+2025-10-21 03:27:03,691 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761006420
+2025-10-21 03:27:03,691 - main - INFO - Advanced Academic Assistant initialized successfully
+2025-10-21 03:27:21,517 - main - INFO - Initializing Advanced Academic Assistant - Session: session_1761006441
+2025-10-21 03:27:21,798 - memory.research_memory - INFO - Research Session Memory initialized for session: session_1761006441
+2025-10-21 03:27:21,798 - memory.project_memory - INFO - Project Memory system initialized
+2025-10-21 03:27:21,936 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L3-v2
+2025-10-21 03:27:22,020 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 03:27:22,021 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L3-v2
+2025-10-21 03:27:22,102 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-10-21 03:27:22,103 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L3-v2
+2025-10-21 03:27:22,237 - tools.vector_db - INFO - Vector DB initialized with models: paraphrase-MiniLM-L3-v2
+2025-10-21 03:27:22,508 - chains.research_chains - INFO - Research Analysis Chain initialized
+2025-10-21 03:27:22,777 - chains.writing_chains - INFO - Academic Writing Chain initialized
+2025-10-21 03:27:23,048 - chains.analysis_chains - INFO - Document Analysis Chain initialized
+2025-10-21 03:27:23,049 - main - INFO - All components initialized successfully
+2025-10-21 03:27:23,049 - streaming.handlers - INFO - Research Streaming Handler initialized for session: session_1761006441
+2025-10-21 03:27:23,050 - main - INFO - Advanced Academic Assistant initialized successfully

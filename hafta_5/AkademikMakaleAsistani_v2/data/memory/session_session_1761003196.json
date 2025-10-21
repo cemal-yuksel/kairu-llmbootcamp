@@ -1,0 +1,31 @@
+{
+  "session_id": "session_1761003196",
+  "research_context": {
+    "current_topics": [
+      ""
+    ],
+    "active_documents": [
+      {
+        "name": "Başlık çıkarılamadı.pdf",
+        "accessed_at": "2025-10-21T02:35:19.485386"
+      }
+    ],
+    "research_questions": [],
+    "findings": [
+      {
+        "finding": "",
+        "source": "unknown",
+        "confidence": "medium",
+        "timestamp": "2025-10-21T02:35:19.485394"
+      }
+    ],
+    "insights": [],
+    "connections": []
+  },
+  "metadata": {
+    "created_at": "2025-10-21T02:33:16.632375",
+    "last_accessed": "2025-10-21T02:35:19.485400",
+    "total_interactions": 1,
+    "research_duration": 0
+  }
+}
