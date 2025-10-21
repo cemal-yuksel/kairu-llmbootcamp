@@ -9,7 +9,7 @@
 
 [![Organizasyon](https://img.shields.io/badge/Organizasyon-Kairu-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/company/kairuu/)
 [![Durum](https://img.shields.io/badge/Durum-Aktif-brightgreen?style=for-the-badge)](./)
-[![Hafta](https://img.shields.io/badge/İlerleme-3/8-blueviolet?style=for-the-badge)](./)
+[![Hafta](https://img.shields.io/badge/İlerleme-5/8-blueviolet?style=for-the-badge)](./) 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Ecosystem-FFD21E?style=for-the-badge)](https://huggingface.co/)
 [![LangChain](https://img.shields.io/badge/LangChain-Framework-8A2BE2?style=for-the-badge)](https://www.langchain.com/)
@@ -30,11 +30,11 @@
 
 | Hafta | Modül Konusu | Durum | Klasör & Bulgular |
 | :---- | :--- | :---: | :--- |
-| **1** | LLM Temelleri ve Python ile NLP’ye Giriş | ✅ Tamamlandı | [hafta_1/](./hafta_1/) |
+| **1** | LLM Temelleri ve Python ile NLP'ye Giriş | ✅ Tamamlandı | [hafta_1/](./hafta_1/) |
 | **2** | Prompt Engineering ve API Tabanlı Kullanım | ✅ Tamamlandı | [hafta_2/](./hafta_2/) |
 | **3** | Hugging Face Transformers Derinlemesine | ✅ Tamamlandı | [hafta_3/](./hafta_3/) |
-| **4** | Embedding, Vektör Veritabanları ve Anlamsal Arama | ➡️ Devam Ediyor | [hafta_4/](./hafta_4/) |
-| **5** | LangChain ile Çok Adımlı Uygulama Geliştirme | 🔜 Başlanacak | [hafta_5/](./hafta_5/) |
+| **4** | Embedding, Vektör Veritabanları ve Anlamsal Arama | ✅ Tamamlandı | [hafta_4/](./hafta_4/) |
+| **5** | LangChain ile Çok Adımlı Uygulama Geliştirme | ✅ Tamamlandı | [hafta_5/](./hafta_5/) |
 | **6** | Fine-Tuning ve Hafif Model Eğitimi (LoRA, QLoRA) | 🔜 Başlanacak | [hafta_6/](./hafta_6/) |
 | **7** | LLM Tabanlı Uygulama Dağıtımı (Deployment) | 🔜 Başlanacak | [hafta_7/](./hafta_7/) |
 | **8** | LLM Protokolleri ile Kurumsal Sistem Mimarisi | 🔜 Başlanacak | [hafta_8/](./hafta_8/) |
@@ -90,9 +90,11 @@
 -   **Vektör Temsilleri:** Metin gömme (text embedding) modellerinin teorisi (Sentence-Transformers).
 -   **Veri Altyapısı:** Vektör veritabanı sistemleri (`Pinecone`, `ChromaDB`, `FAISS`) ve endeksleme stratejileri.
 -   **Temel Mimari:** Anlamsal arama (semantic search) ve **Retrieval Augmented Generation (RAG)** mimarisinin temelleri.
+-   **Performans Optimizasyonu:** Farklı embedding modelleri ve vektör DB'lerinin karşılaştırmalı analizi.
 #### Pratik Çıktılar:
--   🔎 Geniş bir doküman koleksiyonu üzerinde çalışan, yüksek performanslı bir anlamsal arama motoru implementasyonu.
--   💡 Temel bir RAG tabanlı Soru-Cevap (Q&A) sistemi kurarak LLM'in bilgi kapasitesini harici verilerle genişletme.
+-   🔎 FAISS ve ChromaDB ile yüksek performanslı vektör arama sistemleri implementasyonu.
+-   💡 Akademik makale analizi için RAG tabanlı asistan uygulaması (AkademikMakaleAsistani).
+-   📊 Farklı embedding modelleri ve vektör veritabanlarının performans karşılaştırması.
 -   **🎯 Haftanın Ana Kazanımı:** LLM'leri kendi özel verilerimizle besleyerek daha doğru ve bağlama uygun cevaplar üretmesini sağlayan RAG mimarisini kurma yeteneği.
 </details>
 
@@ -104,10 +106,13 @@
 -   **Kompleks Akışlar:** Karmaşık görevler için çok adımlı `agent` sistemleri ve `Chain`'ler tasarlama.
 -   **Entegrasyon:** Harici API'ler ve özel araçlarla (custom tools) entegrasyon.
 -   **Modern Arayüz:** LangChain Expression Language (LCEL) ile pipeline'ları daha deklaratif ve esnek bir şekilde oluşturma.
+-   **Streaming ve Gerçek Zamanlı:** Streaming implementasyonu ve gerçek zamanlı uygulamalar.
 #### Pratik Çıktılar:
--   🤖 Kişisel veriler (PDF, DOCX) üzerinde çalışan ve bu verilerle ilgili soruları yanıtlayan bir AI asistan uygulaması.
--   ⚙️ Birden fazla aracı (örn: web araması + hesap makinesi) orkestre eden bir `agent` geliştirme.
--   **🎯 Haftanın Ana Kazanımı:** LLM'leri, hafıza ve harici araçlarla donatarak karmaşık, çok adımlı görevleri yerine getirebilen otonom `agent`'lar oluşturma.
+-   🤖 Gelişmiş Akademik Makale Asistanı v2 (AkademikMakaleAsistani_v2) - Çoklu agent sistemli kapsamlı uygulama.
+-   ⚙️ Hafıza yönetimi, streaming, analitik ve kullanıcı arayüzü entegrasyonlu modüler sistem mimarisi.
+-   🧠 Memory sistemleri ile bağlamsal konuşma yönetimi ve tools/agents orkestrasyon örnekleri.
+-   📊 Gerçek zamanlı analitik ve performans izleme sistemleri.
+-   **🎯 Haftanın Ana Kazanımı:** LLM'leri, hafıza ve harici araçlarla donatarak karmaşık, çok adımlı görevleri yerine getirebilen otonom `agent`'lar oluşturma ve üretim seviyesi uygulama mimarisi tasarlama.
 </details>
 
 <details>
@@ -182,45 +187,42 @@ kairu-llmbootcamp/
 ├── hafta_1/
 │   ├── microsoft.py
 │   ├── qwen.py
-│   └── turkish_simple.py
+│   ├── turkish_simple.py
+│   └── ReadMe.md
 │
 ├── hafta_2/
-<<<<<<< HEAD
-│   ├── 01_prompt_odevleri.ipynb
-│   ├── 02_prompt_odevleri.ipynb
-│   ├── 03_prompt_odevleri.ipynb
-│   ├── 04_prompt_odevleri.ipynb
-=======
 │   ├── 01_zero_shot.py
 │   ├── 02_few_shot.py
-│   ├── 03_chain_of_though.py
+│   ├── 03_chain_of_thought.py
 │   ├── 04_role_based.py
->>>>>>> 8210e4fb73c55d6e346e3d158ee4b197a2f69a28
 │   ├── 05_chatcompletion_api.py
 │   ├── 06_function_calling.py
-│   ├── 07_structured_outputs.py
-│   ├── 08_advanced_prompting.py
+│   ├── 07_chatbot_with_functions.py
+│   ├── 08_simple_chatbot.py
 │   ├── 09_web_chatbot.py
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── Week Notes.ipynb
+│   ├── prompt/ (venv)
 │   └── weekly_assignment/
-│       └── app.py
+│       ├── app.py
+│       └── README.md
 │
 ├── hafta_3/
-│   ├── .gradio/
-│   ├── llmhafta3.venv/
+│   ├── llm_bootcamp_env/ (venv)
+│   ├── llmhafta3.venv/ (venv)
 │   ├── weekly_assignment/
+│   │   ├── cemal_yuksel_hafta3.py
+│   │   ├── model_performance_results.csv
+│   │   └── README.md
 │   ├── weekly_project/
-│   ├── .gitignore
-<<<<<<< HEAD
-│   ├── 01_autotokenizer_automodel.ipynb
-│   ├── 02_gpt_bert_t5_comparison.ipynb
-│   ├── 03_cpu_gpu_optimization.py
-│   ├── 04_performance_measurement.ipynb
-=======
+│   │   ├── README.md
+│   │   ├── week3_project.py
+│   │   └── assets/
 │   ├── 01_autotokenizer_automodel.py
 │   ├── 02_gpt_bert_t5_comparison.py
 │   ├── 03_cpu_gpu_optimization.py
 │   ├── 04_performance_measurement.py
->>>>>>> 8210e4fb73c55d6e346e3d158ee4b197a2f69a28
 │   ├── benchmark_results.json
 │   ├── HOMEWORK.md
 │   ├── quick_test.py
@@ -232,10 +234,61 @@ kairu-llmbootcamp/
 │   └── Week Notes.ipynb
 │
 ├── hafta_4/
-│   └── [Gelecek haftalarda eklenecek]
+│   ├── AkademikMakaleAsistani/
+│   │   ├── app.py
+│   │   ├── README.md
+│   │   ├── requirements.txt
+│   │   ├── data/
+│   │   ├── pdfs/
+│   │   └── src/
+│   ├── data/
+│   │   └── chroma_db/
+│   ├── images/
+│   ├── 01. embedding_tutorial.py
+│   ├── 02. faiss_vector_search.py
+│   ├── 03. chroma_vector_search.py
+│   ├── 04. performance_comparison.py
+│   ├── 05. simple_rag_demo.py
+│   ├── 06. rag_system.py
+│   ├── README.md
+│   └── requirements.txt
 │
 ├── hafta_5/
-│   └── [Gelecek haftalarda eklenecek]
+│   ├── AkademikMakaleAsistani_v2/
+│   │   ├── enhanced_app.py
+│   │   ├── launch.py
+│   │   ├── main.py
+│   │   ├── README.md
+│   │   ├── requirements.txt
+│   │   ├── simple_test.py
+│   │   ├── start.bat
+│   │   ├── start.sh
+│   │   ├── __pycache__/
+│   │   ├── agents/
+│   │   ├── analytics/
+│   │   ├── chains/
+│   │   ├── data/
+│   │   ├── logs/
+│   │   ├── memory/
+│   │   ├── pdfs/
+│   │   ├── streaming/
+│   │   ├── temp/
+│   │   ├── tests/
+│   │   ├── tools/
+│   │   └── ui/
+│   ├── hafta5_env/ (venv)
+│   ├── 1_chains_basic.py
+│   ├── 2_memory_examples.py
+│   ├── 3_tools_and_agents.py
+│   ├── 4_scenario_applications.py
+│   ├── 5_streaming_examples.py
+│   ├── homework.md
+│   ├── README.md
+│   ├── requirements_minimal.txt
+│   ├── requirements.txt
+│   ├── setup_venv.py
+│   ├── test_installation.py
+│   └── test_simple.py
 │
 ├── hafta_6/
 │   └── [Gelecek haftalarda eklenecek]
@@ -258,26 +311,27 @@ kairu-llmbootcamp/
 - **turkish_simple.py**: Türkçe dil işleme için basit NLP uygulamaları ve örnekler
 
 #### **hafta_2/** - Prompt Engineering Mastery
-<<<<<<< HEAD
-- **01-04_prompt_odevleri.ipynb**: Sistematik prompt engineering eğitimi (4 aşamalı)
-=======
-- **01-04_prompt_techniques.py**: Sistematik prompt engineering teknikleri (4 aşamalı)
->>>>>>> 8210e4fb73c55d6e346e3d158ee4b197a2f69a28
+- **01_zero_shot.py**: Zero-shot prompting teknikleri ve stratejileri
+- **02_few_shot.py**: Few-shot learning ve örnek tabanlı prompt yaklaşımları
+- **03_chain_of_thought.py**: Adım adım düşünme (CoT) prompting yöntemleri
+- **04_role_based.py**: Rol tabanlı prompting ve persona kullanımı
 - **05_chatcompletion_api.py**: OpenAI API ile profesyonel chatbot geliştirme
 - **06_function_calling.py**: LLM'leri harici sistemlerle entegre etme teknikleri
-- **07_structured_outputs.py**: JSON ve yapılandırılmış veri üretimi
-- **08_advanced_prompting.py**: ReAct, Chain-of-Thought ve gelişmiş stratejiler
+- **07_chatbot_with_functions.py**: Function calling ile gelişmiş chatbot sistemleri
+- **08_simple_chatbot.py**: Basit chatbot implementasyon örnekleri
 - **09_web_chatbot.py**: Web arayüzlü interaktif chatbot implementasyonu
+- **Week Notes.ipynb**: Haftalık notlar ve deneysel çalışmalar
+- **prompt/**: Sanal ortam klasörü
 - **weekly_assignment/**: Haftalık proje takibi ve solution
 
 #### **hafta_3/** - Hugging Face Transformers Derinlemesine ve Performans Analizi
-- **.gradio/**: Gradio arayüzüyle ilgili dosyalar
-- **llmhafta3.venv/**: Sanal ortam klasörü
-- **weekly_assignment/**, **weekly_project/**: Haftalık proje takibi ve solution
-- **01_autotokenizer_automodel.ipynb**: AutoTokenizer ve AutoModel kullanımı
-- **02_gpt_bert_t5_comparison.ipynb**: GPT, BERT, T5 karşılaştırmalı analiz
+- **llm_bootcamp_env/**, **llmhafta3.venv/**: Sanal ortam klasörleri
+- **weekly_assignment/**: Haftalık ödev ve performans analizi sonuçları
+- **weekly_project/**: Haftalık proje dosyaları ve çıktıları
+- **01_autotokenizer_automodel.py**: AutoTokenizer ve AutoModel kullanımı
+- **02_gpt_bert_t5_comparison.py**: GPT, BERT, T5 karşılaştırmalı analiz
 - **03_cpu_gpu_optimization.py**: CPU/GPU optimizasyon scripti
-- **04_performance_measurement.ipynb**: Performans ölçüm ve benchmark çalışmaları
+- **04_performance_measurement.py**: Performans ölçüm ve benchmark çalışmaları
 - **benchmark_results.json**: Benchmark sonuçları
 - **HOMEWORK.md**: Hafta ödevi açıklamaları
 - **quick_test.py**: Hızlı test scripti
@@ -286,3 +340,37 @@ kairu-llmbootcamp/
 - **SETUP.md**: Kurulum yönergeleri
 - **start.bat**, **start.sh**: Başlatma scriptleri (Windows/Linux)
 - **Week Notes.ipynb**: Haftalık notlar ve gözlemler
+
+#### **hafta_4/** - Embedding, Vektör Veritabanları ve RAG Sistemleri
+- **AkademikMakaleAsistani/**: Akademik makale analizi için RAG tabanlı asistan uygulaması
+- **data/chroma_db/**: ChromaDB vektör veritabanı dosyaları
+- **images/**: Görselleştirme ve diagram dosyaları
+- **01. embedding_tutorial.py**: Text embedding temel kavramları ve kullanımı
+- **02. faiss_vector_search.py**: FAISS ile yüksek performanslı vektör arama
+- **03. chroma_vector_search.py**: ChromaDB ile vektör veritabanı işlemleri
+- **04. performance_comparison.py**: Farklı vektör DB'lerinin performans karşılaştırması
+- **05. simple_rag_demo.py**: Basit RAG sistemi demonstrasyonu
+- **06. rag_system.py**: Kapsamlı RAG sistemi implementasyonu
+- **README.md**: Hafta 4 dokümantasyonu ve örnekler
+- **requirements.txt**: Gerekli paketler
+
+#### **hafta_5/** - LangChain ile İleri Seviye Uygulama Geliştirme
+- **AkademikMakaleAsistani_v2/**: Gelişmiş akademik makale asistanı (LangChain tabanlı)
+  - **agents/**: Çoklu agent sistemleri
+  - **analytics/**: Analitik ve performans izleme
+  - **chains/**: LangChain chain implementasyonları
+  - **memory/**: Hafıza yönetimi sistemleri
+  - **streaming/**: Gerçek zamanlı streaming implementasyonu
+  - **tools/**: Özel araçlar ve entegrasyonlar
+  - **ui/**: Kullanıcı arayüzü bileşenleri
+- **hafta5_env/**: Sanal ortam klasörü
+- **1_chains_basic.py**: Temel LangChain chain örnekleri
+- **2_memory_examples.py**: Hafıza sistemleri ve kullanımları
+- **3_tools_and_agents.py**: Araçlar ve agent sistemleri
+- **4_scenario_applications.py**: Gerçek dünya senaryoları
+- **5_streaming_examples.py**: Streaming ve gerçek zamanlı uygulamalar
+- **homework.md**: Hafta ödevi açıklamaları
+- **README.md**: Hafta 5 dokümantasyonu
+- **requirements.txt**, **requirements_minimal.txt**: Gerekli paketler
+- **setup_venv.py**: Sanal ortam kurulum scripti
+- **test_installation.py**, **test_simple.py**: Test scriptleri
