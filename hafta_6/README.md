@@ -864,6 +864,7 @@ outputs = model.generate(input_ids, use_cache=False)
 Bu hafta, **modern LLM fine-tuning** tekniklerini, **memory-efficient training** yöntemlerini ve **production-ready inference** sistemlerini öğrendik. PEFT ve LoRA ile %96+ parametre tasarrufu sağlarken model performansını korumayı, Hugging Face Datasets ve Trainer API ile professional training pipeline'ları oluşturmayı ve quantization, batching gibi tekniklerle production ortamında optimize edilmiş inference sistemleri tasarlamayı deneyimledik.
 
 **Öğrendiklerimiz:**
+
 ✅ PEFT & LoRA ile memory-efficient fine-tuning  
 ✅ Datasets ve Trainer API ile modern training pipeline  
 ✅ Quantization ve optimization teknikleri  
@@ -877,8 +878,8 @@ Bu hafta, **modern LLM fine-tuning** tekniklerini, **memory-efficient training**
 
 <p align="center">
 	<b>Kairu AI - Build with LLMs Bootcamp | Hafta 6</b><br>
-	<i>Modern LLM Fine-Tuning & Production Deployment</i>
-</p>: İleri Düzey Model Fine-tuning ve Kişiselleştirme
+	<i>Modern LLM Fine-Tuning & Production Deployment -  İleri Düzey Model Fine-tuning ve Kişiselleştirme</i>
+</p>:
 
 Bu hafta, derin öğrenme modellerini verimli bir şekilde fine-tune etme ve kişiselleştirme konularını ele alacağız.
 
