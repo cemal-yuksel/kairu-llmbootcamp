@@ -9,7 +9,7 @@
 
 [![Organizasyon](https://img.shields.io/badge/Organizasyon-Kairu-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/company/kairuu/)
 [![Durum](https://img.shields.io/badge/Durum-Aktif-brightgreen?style=for-the-badge)](./)
-[![Hafta](https://img.shields.io/badge/İlerleme-5/8-blueviolet?style=for-the-badge)](./) 
+[![Hafta](https://img.shields.io/badge/İlerleme-6/8-blueviolet?style=for-the-badge)](./) 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Ecosystem-FFD21E?style=for-the-badge)](https://huggingface.co/)
 [![LangChain](https://img.shields.io/badge/LangChain-Framework-8A2BE2?style=for-the-badge)](https://www.langchain.com/)
@@ -35,7 +35,7 @@
 | **3** | Hugging Face Transformers Derinlemesine | ✅ Tamamlandı | [hafta_3/](./hafta_3/) |
 | **4** | Embedding, Vektör Veritabanları ve Anlamsal Arama | ✅ Tamamlandı | [hafta_4/](./hafta_4/) |
 | **5** | LangChain ile Çok Adımlı Uygulama Geliştirme | ✅ Tamamlandı | [hafta_5/](./hafta_5/) |
-| **6** | Fine-Tuning ve Hafif Model Eğitimi (LoRA, QLoRA) | 🔜 Başlanacak | [hafta_6/](./hafta_6/) |
+| **6** | Fine-Tuning ve Hafif Model Eğitimi (LoRA, QLoRA) | ✅ Tamamlandı | [hafta_6/](./hafta_6/) |
 | **7** | LLM Tabanlı Uygulama Dağıtımı (Deployment) | 🔜 Başlanacak | [hafta_7/](./hafta_7/) |
 | **8** | LLM Protokolleri ile Kurumsal Sistem Mimarisi | 🔜 Başlanacak | [hafta_8/](./hafta_8/) |
 
@@ -123,10 +123,13 @@
 -   **Verimlilik:** Parametre-verimli fine-tuning (PEFT): **LoRA** ve **QLoRA** teknikleri.
 -   **Veri Hazırlığı:** Eğitim için veri seti hazırlama, temizleme ve talimat tabanlı (instruction-based) formata dönüştürme.
 -   **Değerlendirme:** Model değerlendirme metrikleri (`Perplexity`, `BLEU`, `ROUGE`).
+-   **Production Inference:** Model optimizasyonu, quantization ve deployment stratejileri.
 #### Pratik Çıktılar:
--   🎓 Açık kaynaklı bir LLM'i (örn: Llama 3, Mistral), belirli bir alan (hukuk, tıp vb.) için LoRA ile fine-tune etme.
--   📈 Fine-tune edilmiş modelin performansını, temel modele kıyasla metriklerle değerlendirme.
--   **🎯 Haftanın Ana Kazanımı:** Genel amaçlı LLM'leri, donanım kaynaklarını verimli kullanarak, belirli bir alanda uzmanlaşmış modellere dönüştürme yetkinliği.
+-   🎓 LoRA ile parameter-efficient fine-tuning: GPT-2 modelini %96+ parametre tasarrufu ile eğitme.
+-   📊 Hugging Face Datasets ve Trainer API ile profesyonel veri pipeline'ları ve custom metrik hesaplama.
+-   � Production inference: Quantization (INT8/FP16), kişiselleştirilmiş chatbot ve deployment optimizasyonu.
+-   📈 Memory-efficient training teknikleri, checkpoint yönetimi ve model versiyonlama.
+-   **🎯 Haftanın Ana Kazanımı:** Genel amaçlı LLM'leri, donanım kaynaklarını verimli kullanarak, belirli bir alanda uzmanlaşmış modellere dönüştürme ve production ortamında optimize edilmiş inference sistemleri kurma yetkinliği.
 </details>
 
 <details>
@@ -291,7 +294,32 @@ kairu-llmbootcamp/
 │   └── test_simple.py
 │
 ├── hafta_6/
-│   └── [Gelecek haftalarda eklenecek]
+│   ├── fine_tuned_model/
+│   │   ├── config.json
+│   │   ├── model.safetensors
+│   │   ├── special_tokens_map.json
+│   │   ├── tokenizer_config.json
+│   │   ├── tokenizer.json
+│   │   └── vocab.txt
+│   ├── lora_model/
+│   │   ├── adapter_config.json
+│   │   ├── adapter_model.safetensors
+│   │   ├── special_tokens_map.json
+│   │   ├── tokenizer_config.json
+│   │   ├── tokenizer.json
+│   │   └── vocab.txt
+│   ├── lora_results/
+│   │   ├── checkpoint-4/
+│   │   └── checkpoint-6/
+│   ├── results/
+│   │   ├── checkpoint-1/
+│   │   ├── checkpoint-2/
+│   │   └── checkpoint-3/
+│   ├── 1_peft_lora.py
+│   ├── 2_datasets_trainer.py
+│   ├── 3_inference_personalization.py
+│   ├── README.md
+│   └── requirements.txt
 │
 ├── hafta_7/
 │   └── [Gelecek haftalarda eklenecek]
@@ -374,3 +402,15 @@ kairu-llmbootcamp/
 - **requirements.txt**, **requirements_minimal.txt**: Gerekli paketler
 - **setup_venv.py**: Sanal ortam kurulum scripti
 - **test_installation.py**, **test_simple.py**: Test scriptleri
+
+#### **hafta_6/** - Fine-Tuning ve Hafif Model Eğitimi (PEFT, LoRA)
+- **fine_tuned_model/**: Fine-tune edilmiş tam model checkpointleri ve konfigürasyon dosyaları
+- **lora_model/**: LoRA adapter modeli, tokenizer ve eğitim parametreleri
+- **lora_results/**: LoRA eğitim sürecinin ara checkpointleri (checkpoint-4, checkpoint-6)
+- **results/**: Full fine-tuning eğitim checkpointleri (checkpoint-1, 2, 3)
+- **1_peft_lora.py**: PEFT ve LoRA ile parameter-efficient fine-tuning, %96+ parametre tasarrufu
+- **2_datasets_trainer.py**: Hugging Face Datasets ve Trainer API kullanımı, custom metrik hesaplama
+- **3_inference_personalization.py**: Production inference, kişiselleştirilmiş chatbot, quantization (INT8/FP16)
+- **README.md**: Hafta 6 kapsamlı dokümantasyonu, teknik açıklamalar ve best practices
+- **requirements.txt**: Gerekli paketler (transformers, PEFT, datasets, torch, accelerate, bitsandbytes)
+
