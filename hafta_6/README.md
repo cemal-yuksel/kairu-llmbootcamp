@@ -20,6 +20,8 @@ Bu klasördeki ana dosyalar ve içerikleri:
 | `lora_model/`                       | LoRA adapter modeli, tokenizer ve eğitim parametreleri                                          |
 | `lora_results/`                     | LoRA eğitim checkpointleri (checkpoint-4, checkpoint-6)                                         |
 | `results/`                          | Full fine-tuning eğitim checkpointleri (checkpoint-1, 2, 3)                                     |
+| `homework/`                         | 🎬 **Film Yorum Özetleme & Q&A Sistemi** - RAG tabanlı proje (IMDB veri seti, LoRA fine-tuning, FAISS vector DB) |
+| `venv/`                             | Python sanal ortamı (virtual environment)                                                       |
 
 Her dosya, modern LLM fine-tuning teknikleri, memory-efficient eğitim yöntemleri ve production-ready inference implementasyonlarını detaylı örneklerle gösterir.
 
@@ -32,6 +34,26 @@ Bu hafta, **Large Language Model (LLM)** fine-tuning süreçlerinin profesyonel 
 Her aşamada, memory-efficient training teknikleri, quantization stratejileri, custom metric hesaplama, real-time inference optimizasyonu ve production deployment best practices'leri ile LLM'leri gerçek dünya uygulamalarında nasıl kullanabileceğimi pratik örneklerle deneyimledim.
 
 Kodlarda, detaylı açıklamalar ve step-by-step implementasyonlar ile hem temel kavramları hem de enterprise-grade LLM uygulamalarının nasıl geliştirebileceğini kapsamlı örneklerle sundum.
+
+### 🎬 Hafta 6 Homework: Film Yorum Analizi Sistemi
+
+**Homework** klasöründe, bu haftanın konularını birleştiren kapsamlı bir **RAG (Retrieval Augmented Generation)** projesi geliştirdim:
+
+- 📊 **IMDB Film Yorumları Dataset**: 50,000 film yorumu ile çalışma
+- 🔍 **FAISS Vector Database**: Semantic search için optimize edilmiş vector store
+- 🤖 **LoRA Fine-tuned Summarizer**: GPT-2 tabanlı özelleştirilmiş özetleme modeli (%99.79 parametre verimliliği)
+- 💬 **Q&A Sistemi**: "Oyunculuk nasıl?" gibi doğal dil sorularına contextual yanıtlar
+- 🌐 **Streamlit Web Arayüzü**: Interactive, production-ready kullanıcı arayüzü
+- ⚡ **Quick Start**: 5-10 dakikada çalışan hızlı test modu
+
+**Proje Özellikleri:**
+- RAG pipeline ile bilgi tabanlı soru-cevap
+- Sentiment-based filtering (pozitif/negatif yorumlar)
+- Real-time semantic search (<10ms)
+- Confidence scoring ve multi-document synthesis
+- Comprehensive logging ve error handling
+
+👉 Detaylı bilgi için: [`homework/README.md`](./homework/README.md)
 
 ---
 
@@ -871,6 +893,21 @@ Bu hafta, **modern LLM fine-tuning** tekniklerini, **memory-efficient training**
 ✅ Kişiselleştirilmiş chatbot sistemleri  
 ✅ Production deployment stratejileri  
 ✅ Performance benchmarking ve monitoring  
+✅ **RAG (Retrieval Augmented Generation) sistemi tasarımı**  
+✅ **FAISS vector database ile semantic search**  
+✅ **LoRA fine-tuning ile özelleştirilmiş summarization modeli**  
+✅ **Interactive web arayüzü geliştirme (Streamlit)**  
+
+### 📂 Proje Klasörleri
+
+- **`hafta_6/`** - Ana eğitim dosyaları (1_peft_lora.py, 2_datasets_trainer.py, 3_inference_personalization.py)
+- **`homework/`** - 🎬 **Film Yorum Analizi Sistemi** - Production-ready RAG projesi
+  - IMDB 50K dataset ile çalışma
+  - LoRA fine-tuned summarizer (%99.79 parametre verimliliği)
+  - FAISS vector DB ile <10ms semantic search
+  - Q&A, Summarization ve Search modları
+  - Streamlit web arayüzü
+  - Quick start script (5-10 dakika)
 
 **Başarılar! 🚀**
 
@@ -878,44 +915,6 @@ Bu hafta, **modern LLM fine-tuning** tekniklerini, **memory-efficient training**
 
 <p align="center">
 	<b>Kairu AI - Build with LLMs Bootcamp | Hafta 6</b><br>
-	<i>Modern LLM Fine-Tuning & Production Deployment -  İleri Düzey Model Fine-tuning ve Kişiselleştirme</i>
-</p>:
-
-Bu hafta, derin öğrenme modellerini verimli bir şekilde fine-tune etme ve kişiselleştirme konularını ele alacağız.
-
-## 📚 Konular
-
-### 1. PEFT (Parameter Efficient Fine-Tuning)
-- LoRA (Low-Rank Adaptation) nedir ve nasıl çalışır?
-- QLoRA ile bellek optimizasyonu
-- Adapter katmanları
-- PEFT ile model boyutunu küçük tutma
-
-### 2. Datasets + Trainer Kullanımı
-- Hugging Face Datasets kütüphanesi
-- Veri ön işleme ve tokenization
-- Trainer sınıfı ile model eğitimi
-- TrainingArguments konfigürasyonu
-
-### 3. Inference ve Kişiselleştirilmiş Model
-- Fine-tune edilmiş modeli kullanma
-- Inference optimizasyonu
-- Model deployment stratejileri
-- Kişiselleştirilmiş çıktılar üretme
-
-## 🛠 Pratik Uygulamalar
-
-Her konu için hands-on örnekler ve kod snippet'leri içerir.
-
-## 📋 Gereksinimler
-
-```bash
-pip install transformers datasets peft accelerate bitsandbytes
-```
-
-## 🎯 Öğrenme Hedefleri
-
-Bu hafta sonunda:
-- PEFT teknikleri ile verimli fine-tuning yapabileceksiniz
-- Datasets ve Trainer kullanarak model eğitimi gerçekleştirebileceksiniz
-- Kendi modelinizi inference için kullanabileceksiniz
+	<i>Modern LLM Fine-Tuning & Production Deployment - İleri Düzey Model Fine-tuning ve Kişiselleştirme</i><br>
+	<i>🎬 Bonus: RAG-based Film Yorum Analizi & Q&A Sistemi</i>
+</p>

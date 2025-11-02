@@ -1172,7 +1172,7 @@ def main():
                 Made with ❤️ using Streamlit, FAISS, LoRA & GPT-2
             </p>
             <p style="color: #505050; font-size: 0.8rem; margin-top: 0.5rem;">
-                <strong>Kairu AI</strong> - Build with LLMs Bootcamp | Hafta 6 Ödev
+                <strong>Kairu AI</strong> - Build with LLMs Bootcamp | Hafta 6 Project - Cemal YÜKSEL
             </p>
             <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #2f2f2f;">
                 <p style="color: #808080; font-size: 0.85rem;">

@@ -24,9 +24,7 @@ Profesyonel bir RAG (Retrieval Augmented Generation) sistemi ile IMDB film yorum
 - [📁 Proje Yapısı](#-proje-yapısı)
 - [🔬 Teknik Detaylar](#-teknik-detaylar)
 - [📊 Sonuçlar ve Metrikler](#-sonuçlar-ve-metrikler)
-- [🔧 Geliştirme](#-geliştirme)
-- [🤝 Katkıda Bulunma](#-katkıda-bulunma)
-- [📜 Lisans](#-lisans)
+- [ Lisans](#-lisans)
 
 ---
 
@@ -115,11 +113,11 @@ streamlit run 5_interactive_app.py
 ┌─────────────────────────────────────────────────────────────┐
 │                    RAG SYSTEM CORE                          │
 ├─────────────────────────────────────────────────────────────┤
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐  │
-│  │   Retrieval  │    │  Generation  │    │   Ranking    │  │
-│  │   (FAISS)    │───▶│   (LoRA)     │───▶│  (Scoring)   │  │
-│  └──────────────┘    └──────────────┘    └──────────────┘  │
-└──────────────┬──────────────────────────┬──────────────────┘
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐   │
+│  │   Retrieval  │    │  Generation  │    │   Ranking    │   │
+│  │   (FAISS)    │───▶│   (LoRA)     │───▶│  (Scoring)  │   │
+│  └──────────────┘    └──────────────┘    └──────────────┘   │
+└──────────────┬──────────────────────────┬────────────────── ┘
                │                          │
                ▼                          ▼
 ┌──────────────────────────┐  ┌─────────────────────────────┐
@@ -759,40 +757,6 @@ ROUGE-1: 0.82 | Based on 10 reviews | 95% negative sentiment
 
 ---
 
-## 🔧 Geliştirme
-
-### 🚀 Future Improvements
-
-#### 🎯 Short-term (Kolay - 1-2 gün)
-- [ ] Multi-aspect extraction (NER ile aspect detection)
-- [ ] Granular sentiment scoring (0-1 arası continuous)
-- [ ] Review timeline analysis (temporal patterns)
-- [ ] Keyword extraction ve highlighting
-- [ ] Export functionality (PDF, CSV)
-- [ ] User favorites/bookmarks
-- [ ] Search history tracking
-
-#### � Medium-term (Orta - 1 hafta)
-- [ ] Multi-lingual support (çok dilli model - mBART)
-- [ ] User feedback loop (thumbs up/down)
-- [ ] Caching system (Redis ile response caching)
-- [ ] Batch processing API (FastAPI)
-- [ ] A/B testing framework
-- [ ] Advanced filtering (date, rating, length)
-- [ ] Comparative analysis (movie vs movie)
-
-#### 🌟 Long-term (Gelişmiş - 2+ hafta)
-- [ ] Fine-grained ABSA (Aspect-Based Sentiment Analysis)
-- [ ] Cross-movie comparison ve ranking
-- [ ] Personalized recommendations (user profiling)
-- [ ] Multi-modal analysis (poster, trailer, audio)
-- [ ] Reinforcement Learning from Human Feedback (RLHF)
-- [ ] Real-time review scraping ve update
-- [ ] GraphQL API
-- [ ] Microservices architecture
-
----
-
 ### 👨‍💻 Local Development
 
 #### Development Tools
@@ -817,30 +781,7 @@ mypy . --ignore-missing-imports
 pytest tests/ -v --cov=. --cov-report=html
 ```
 
-#### Testing Strategy
 
-```python
-# Unit tests
-pytest tests/test_data_prep.py -v
-pytest tests/test_rag.py -v
-
-# Integration tests
-pytest tests/test_e2e.py -v
-
-# Performance tests
-pytest tests/test_performance.py -v --benchmark
-```
-
-#### Debug Mode
-
-```python
-# config.py içinde
-DEBUG_MODE = True
-LOG_LEVEL = "DEBUG"
-
-# Detaylı loglar için
-python 5_interactive_app.py --debug
-```
 
 ---
 
@@ -959,16 +900,6 @@ git push https://huggingface.co/spaces/<username>/movie-summarizer
 
 ---
 
-## 🤝 Katkıda Bulunma
-
-Katkılarınız çok değerlidir! Lütfen şu adımları izleyin:
-
-1. Fork this repo
-2. Feature branch oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Commit edin (`git commit -m 'Add some AmazingFeature'`)
-4. Push edin (`git push origin feature/AmazingFeature`)
-5. Pull Request açın
-
 ---
 
 ## 📞 İletişim
@@ -995,8 +926,6 @@ MIT License - Detaylar için [LICENSE](../../LICENSE) dosyasına bakın.
 - ✅ Değiştirme izni
 - ✅ Dağıtma izni
 - ✅ Özel kullanım
-- ❌ Sorumluluk yok
-- ❌ Garanti yok
 
 ---
 
@@ -1123,13 +1052,11 @@ Bu proje aşağıdaki harika open-source projeleri kullanmaktadır:
 
 ---
 
-### Made with ❤️ and 🤖 by Cemal Yüksel
+### Made  in Cemal Yüksel
 
 **Powered by:**  
 🤗 Hugging Face • 🔥 PyTorch • ⚡ FAISS • 🎨 Streamlit
 
 ---
-
-**#LLM #RAG #LoRA #PEFT #NLP #AI #MachineLearning #DeepLearning**
 
 </div>
