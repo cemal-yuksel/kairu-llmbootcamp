@@ -46,7 +46,7 @@ RAGSystem = rag_qa_module.RAGSystem
 # ============================================================================
 
 st.set_page_config(
-    page_title="🎬 CineAI - Film Analiz Platformu",
+    page_title="CineAI - Film Analiz Platformu",
     page_icon="🎬",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -87,9 +87,10 @@ st.markdown("""
     /* ====== HERO SECTION ====== */
     .hero-section {
         position: relative;
-        width: 100%;
-        height: 70vh;
-        background: linear-gradient(rgba(20,20,20,0.3), rgba(20,20,20,0.9)),
+        width: calc(100% + 10rem);
+        height: 85vh;
+        min-height: 600px;
+        background: linear-gradient(rgba(20,20,20,0.2), rgba(20,20,20,0.85)),
                     url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1920') center/cover;
         display: flex;
         flex-direction: column;
@@ -100,6 +101,7 @@ st.markdown("""
         border-radius: 0 0 20px 20px;
         overflow: hidden;
         animation: fadeIn 1s ease-in;
+        background-attachment: fixed;
     }
     
     .hero-title {
@@ -127,40 +129,53 @@ st.markdown("""
     }
     
     .hero-stats {
-        display: flex;
-        gap: 3rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
         margin-top: 2rem;
         animation: fadeIn 1.2s ease-in;
+        width: 100%;
+        max-width: 900px;
     }
     
     .stat-item {
         text-align: center;
-        padding: 1.5rem 2rem;
-        background: rgba(255,255,255,0.1);
-        backdrop-filter: blur(10px);
-        border-radius: 15px;
-        border: 1px solid rgba(255,255,255,0.2);
-        transition: all 0.3s ease;
+        padding: 2rem;
+        background: rgba(255,255,255,0.08);
+        backdrop-filter: blur(15px);
+        border-radius: 16px;
+        border: 1px solid rgba(255,255,255,0.15);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        min-height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .stat-item:hover {
-        transform: translateY(-5px);
-        background: rgba(229, 9, 20, 0.2);
+        transform: translateY(-8px) scale(1.02);
+        background: rgba(229, 9, 20, 0.15);
         border-color: var(--netflix-red);
+        box-shadow: 0 8px 30px rgba(229, 9, 20, 0.4);
     }
     
     .stat-number {
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: 900;
         color: var(--netflix-red);
+        text-shadow: 0 2px 10px rgba(229, 9, 20, 0.5);
+        line-height: 1.2;
     }
     
     .stat-label {
-        font-size: 0.9rem;
-        color: #ffffff;
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.9);
         text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-top: 0.5rem;
+        letter-spacing: 1.5px;
+        margin-top: 0.8rem;
+        font-weight: 500;
     }
     
     /* ====== SIDEBAR STYLING ====== */
@@ -176,23 +191,60 @@ st.markdown("""
         font-weight: 700;
     }
     
+    /* Sidebar radio buttons - Light theme */
+    [data-testid="stSidebar"] .stRadio > label {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 1rem;
+        border-radius: 10px;
+        margin: 0.5rem 0;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+        cursor: pointer;
+        color: #141414;
+        font-weight: 600;
+    }
+    
+    [data-testid="stSidebar"] .stRadio > label:hover {
+        background: rgba(255, 255, 255, 1);
+        border-color: var(--netflix-red);
+        transform: translateX(5px);
+        box-shadow: 0 4px 15px rgba(229, 9, 20, 0.3);
+    }
+    
+    [data-testid="stSidebar"] .stRadio > label[data-baseweb="radio"] > div:first-child {
+        background-color: #ffffff;
+    }
+    
+    [data-testid="stSidebar"] .stRadio > label > div:first-child > div {
+        color: #141414;
+    }
+    
+    [data-testid="stSidebar"] .stRadio label div[role="radio"][aria-checked="true"] {
+        background: var(--netflix-red) !important;
+    }
+    
     /* ====== MODE CARDS ====== */
     .mode-card {
         background: var(--netflix-dark);
         border: 2px solid var(--netflix-gray);
-        border-radius: 15px;
-        padding: 2rem;
+        border-radius: 16px;
+        padding: 2.5rem;
         margin: 1rem 0;
-        transition: all 0.3s ease;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
         position: relative;
         overflow: hidden;
+        height: 100%;
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
     
     .mode-card:hover {
-        transform: translateY(-5px);
+        transform: translateY(-8px) scale(1.02);
         border-color: var(--netflix-red);
-        box-shadow: 0 10px 30px rgba(229, 9, 20, 0.3);
+        box-shadow: 0 12px 40px rgba(229, 9, 20, 0.35);
     }
     
     .mode-card::before {
@@ -212,21 +264,24 @@ st.markdown("""
     }
     
     .mode-icon {
-        font-size: 3rem;
-        margin-bottom: 1rem;
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        display: block;
     }
     
     .mode-title {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         font-weight: 700;
         color: #ffffff;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        line-height: 1.3;
     }
     
     .mode-description {
         color: var(--netflix-light-gray);
-        font-size: 1rem;
-        line-height: 1.6;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        flex-grow: 1;
     }
     
     /* ====== BUTTONS ====== */
@@ -278,10 +333,14 @@ st.markdown("""
         margin: 1.5rem 0;
         box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         animation: slideIn 0.5s ease-out;
+        color: #ffffff;
     }
     
-    .answer-box h4 {
-        color: #ffffff;
+    .answer-box h4,
+    .answer-box p,
+    .answer-box span,
+    .answer-box div {
+        color: #ffffff !important;
         font-size: 1.3rem;
         line-height: 1.8;
         font-weight: 400;
@@ -296,6 +355,15 @@ st.markdown("""
         transition: all 0.3s ease;
         position: relative;
         overflow: hidden;
+        color: #ffffff;
+    }
+    
+    .review-card p,
+    .review-card span,
+    .review-card div,
+    .review-card strong,
+    .review-card em {
+        color: #ffffff !important;
     }
     
     .review-card:hover {
@@ -339,14 +407,31 @@ st.markdown("""
         background: var(--netflix-dark);
         border: 1px solid var(--netflix-gray);
         border-radius: 10px;
-        color: #ffffff;
+        color: #ffffff !important;
         font-weight: 600;
         transition: all 0.3s ease;
+    }
+    
+    .streamlit-expanderHeader p,
+    .streamlit-expanderHeader span,
+    .streamlit-expanderHeader div {
+        color: #ffffff !important;
     }
     
     .streamlit-expanderHeader:hover {
         background: var(--netflix-gray);
         border-color: var(--netflix-red);
+    }
+    
+    /* Expander içeriği */
+    .streamlit-expanderContent {
+        color: #ffffff;
+    }
+    
+    .streamlit-expanderContent p,
+    .streamlit-expanderContent span,
+    .streamlit-expanderContent div {
+        color: #ffffff !important;
     }
     
     /* ====== BADGES ====== */
@@ -494,6 +579,25 @@ st.markdown("""
         gap: 1.5rem;
         margin: 2rem 0;
     }
+    
+    /* ====== GLOBAL TEXT COLORS ====== */
+    /* Tüm markdown ve text elementleri beyaz */
+    .stMarkdown p,
+    .stMarkdown span,
+    .stMarkdown div,
+    .stText,
+    .caption,
+    [data-testid="stCaptionContainer"],
+    [data-testid="stMarkdownContainer"] p {
+        color: #ffffff !important;
+    }
+    
+    /* Caption özel stil */
+    .stCaption,
+    [data-testid="stCaptionContainer"] {
+        color: rgba(255, 255, 255, 0.8) !important;
+        font-size: 0.9rem;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -621,7 +725,7 @@ def render_sidebar():
     st.sidebar.markdown("""
     <div style="text-align: center; color: #808080; font-size: 0.8rem; padding: 1rem 0;">
         <p>💡 <strong>İpucu:</strong> Daha iyi sonuçlar için spesifik sorular sorun</p>
-        <p style="margin-top: 1rem;">Made with ❤️ by Kairu AI</p>
+        <p style="margin-top: 1rem;">Made with ❤️ by Cemal YÜKSEL</p>
     </div>
     """, unsafe_allow_html=True)
     
@@ -757,6 +861,13 @@ def render_homepage():
 
 def render_qa_mode(rag, top_k, sentiment_filter, show_sources):
     """Soru-Cevap Modu"""
+    
+    # Sistem kontrolü
+    if rag is None:
+        st.error("❌ RAG sistemi yüklenmedi!")
+        st.info("Lütfen ana sayfaya dönün ve sistemin yüklenmesini bekleyin.")
+        return
+    
     st.markdown('<h2 class="section-title">💬 Film Hakkında Soru Sorun</h2>', unsafe_allow_html=True)
     st.markdown("""
     <p style="color: #808080; font-size: 1.1rem; margin-bottom: 2rem;">
@@ -805,56 +916,71 @@ def render_qa_mode(rag, top_k, sentiment_filter, show_sources):
             filter_label = 0
         
         # Get answer with progress
-        with st.spinner("🤔 Düşünüyorum..."):
-            progress_bar = st.progress(0)
-            for i in range(100):
-                time.sleep(0.01)
-                progress_bar.progress(i + 1)
-            
-            result = rag.answer_question(
-                question,
-                top_k=top_k,
-                filter_sentiment=filter_label
-            )
-            progress_bar.empty()
-        
-        # Display answer
-        st.markdown("### 💡 Yanıt")
-        st.markdown(f'<div class="answer-box"><h4>{result["answer"]}</h4></div>', unsafe_allow_html=True)
-        
-        # Confidence metrics
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            confidence_pct = result['confidence'] * 100
-            st.metric("🎯 Güven Skoru", f"%{confidence_pct:.1f}")
-        with col2:
-            st.metric("📚 Kaynak Sayısı", len(result['sources']))
-        with col3:
-            avg_length = sum(len(s['text']) for s in result['sources']) / len(result['sources'])
-            st.metric("📝 Ort. Uzunluk", f"{avg_length:.0f} karakter")
-        
-        # Sources
-        if show_sources and result['sources']:
-            st.markdown("<br>", unsafe_allow_html=True)
-            st.markdown("### 📚 Kaynak İncelemeler")
-            
-            for i, source in enumerate(result['sources'], 1):
-                similarity_pct = source['similarity'] * 100
-                sentiment = "Olumlu ✅" if source['metadata'].get('label') == 1 else "Olumsuz ❌"
-                sentiment_class = "badge-positive" if source['metadata'].get('label') == 1 else "badge-negative"
+        try:
+            with st.spinner("🤔 Düşünüyorum..."):
+                progress_bar = st.progress(0)
+                for i in range(100):
+                    time.sleep(0.01)
+                    progress_bar.progress(i + 1)
                 
-                with st.expander(f"📄 İnceleme {i} - Benzerlik: %{similarity_pct:.1f}"):
-                    st.markdown(f'<div class="review-card">', unsafe_allow_html=True)
-                    st.markdown(source['text'])
-                    st.markdown("<br>", unsafe_allow_html=True)
+                result = rag.answer_question(
+                    question,
+                    top_k=top_k,
+                    filter_sentiment=filter_label
+                )
+                progress_bar.empty()
+            
+            # Display answer
+            st.markdown("### 💡 Yanıt")
+            st.markdown(f'<div class="answer-box"><h4>{result["answer"]}</h4></div>', unsafe_allow_html=True)
+            
+            # Confidence metrics
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                confidence_pct = result['confidence'] * 100
+                st.metric("🎯 Güven Skoru", f"%{confidence_pct:.1f}")
+            with col2:
+                st.metric("📚 Kaynak Sayısı", len(result['sources']))
+            with col3:
+                if len(result['sources']) > 0:
+                    avg_length = sum(len(s['text']) for s in result['sources']) / len(result['sources'])
+                    st.metric("📝 Ort. Uzunluk", f"{avg_length:.0f} karakter")
+                else:
+                    st.metric("📝 Ort. Uzunluk", "N/A")
+            
+            # Sources
+            if show_sources and result['sources']:
+                st.markdown("<br>", unsafe_allow_html=True)
+                st.markdown("### 📚 Kaynak İncelemeler")
+                
+                for i, source in enumerate(result['sources'], 1):
+                    similarity_pct = source['similarity'] * 100
+                    sentiment = "Olumlu ✅" if source['metadata'].get('label') == 1 else "Olumsuz ❌"
+                    sentiment_class = "badge-positive" if source['metadata'].get('label') == 1 else "badge-negative"
                     
-                    col1, col2 = st.columns(2)
-                    with col1:
-                        st.caption(f"**İnceleme ID:** {source['metadata']['review_id']}")
-                    with col2:
-                        st.markdown(f'<span class="sentiment-badge {sentiment_class}">{sentiment}</span>', unsafe_allow_html=True)
-                    
-                    st.markdown('</div>', unsafe_allow_html=True)
+                    with st.expander(f"📄 İnceleme {i} - Benzerlik: %{similarity_pct:.1f}"):
+                        st.markdown(f'<div class="review-card">', unsafe_allow_html=True)
+                        st.markdown(source['text'])
+                        st.markdown("<br>", unsafe_allow_html=True)
+                        
+                        col1, col2 = st.columns(2)
+                        with col1:
+                            st.caption(f"**İnceleme ID:** {source['metadata']['review_id']}")
+                        with col2:
+                            st.markdown(f'<span class="sentiment-badge {sentiment_class}">{sentiment}</span>', unsafe_allow_html=True)
+                        
+                        st.markdown('</div>', unsafe_allow_html=True)
+        
+        except Exception as e:
+            st.error(f"❌ Hata oluştu: {str(e)}")
+            st.info("💡 Lütfen şunları kontrol edin:")
+            st.code("""
+1. RAG sistemi düzgün yüklenmiş mi?
+2. Vector DB dosyaları mevcut mu?
+3. Model dosyaları doğru konumda mı?
+            """)
+            import traceback
+            st.error(traceback.format_exc())
 
 
 # ============================================================================
@@ -1131,8 +1257,6 @@ def main():
             with st.spinner("🚀 Sistem başlatılıyor..."):
                 st.session_state.rag_system = load_rag_system()
             st.success("✅ Sistem hazır!")
-            time.sleep(1)
-            st.rerun()
         except Exception as e:
             st.error(f"❌ Sistem yüklenemedi: {e}")
             st.info("Lütfen önceki adımları çalıştırdığınızdan emin olun:")
@@ -1141,22 +1265,37 @@ def main():
 2. python 2_embedding_creation.py
 3. python 3_lora_summarizer_training.py
             """)
-            return
+            st.session_state.rag_system = None
+            
     
-    rag = st.session_state.rag_system
+    rag = st.session_state.get("rag_system")
+    
+    # RAG yüklenmemişse sadece ana sayfayı göster
+    if rag is None and mode != "🏠 Ana Sayfa":
+        st.warning("⚠️ Sistem henüz hazır değil. Lütfen bekleyin veya ana sayfaya dönün.")
+        st.info("RAG sistemi yüklenirken lütfen bekleyin...")
+        return
     
     # Hero Section (sadece ana sayfada)
     if mode == "🏠 Ana Sayfa":
         render_hero()
+    else:
+        # Diğer sayfalarda minimal header
+        st.markdown("""
+        <div style="padding: 2rem 0 1rem 0; margin-bottom: 2rem;">
+            <h1 style="color: #ffffff; font-size: 2.5rem; margin: 0;">🎬 CineAI</h1>
+            <p style="color: #808080; margin-top: 0.5rem;">Film Analiz Platformu</p>
+        </div>
+        """, unsafe_allow_html=True)
     
     # Render based on mode
     if mode == "🏠 Ana Sayfa":
         render_homepage()
-    elif mode == "💬 Soru-Cevap":
+    elif "Soru-Cevap" in mode:
         render_qa_mode(rag, top_k, sentiment_filter, show_sources)
-    elif mode == "📊 Özet Oluştur":
+    elif "Özet Oluştur" in mode:
         render_summarize_mode(rag, top_k, sentiment_filter, show_sources)
-    elif mode == "🔍 İnceleme Ara":
+    elif "İnceleme Ara" in mode:
         render_search_mode(rag, top_k, sentiment_filter, show_sources)
     
     # Footer
@@ -1169,15 +1308,12 @@ def main():
                 Yapay Zeka Destekli Film Analiz Platformu
             </p>
             <p style="color: #606060; font-size: 0.9rem;">
-                Made with ❤️ using Streamlit, FAISS, LoRA & GPT-2
+                Made by Cemal YÜKSEL using Streamlit, FAISS, LoRA & GPT-2
             </p>
             <p style="color: #505050; font-size: 0.8rem; margin-top: 0.5rem;">
-                <strong>Kairu AI</strong> - Build with LLMs Bootcamp | Hafta 6 Project - Cemal YÜKSEL
+                <strong>Kairu AI</strong> - Build with LLMs Bootcamp | Hafta 6 Project
             </p>
             <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #2f2f2f;">
-                <p style="color: #808080; font-size: 0.85rem;">
-                    🔒 Gizlilik | 📧 İletişim | 💼 Hakkımızda
-                </p>
             </div>
         </div>
         """,
