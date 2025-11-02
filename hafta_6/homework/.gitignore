@@ -1,0 +1,131 @@
+# ============================================================================
+# GITIGNORE - Intelligent Review Summarizer with Q&A
+# ============================================================================
+# Bu dosya, Git'e hangi dosyaların commit edilmeyeceğini söyler
+
+# ============================================================================
+# MODEL DOSYALARI (Büyük boyutlu)
+# ============================================================================
+models/
+*.bin
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+
+# LoRA adapters
+lora_*/
+fine_tuned_*/
+checkpoint-*/
+
+# ============================================================================
+# VERİ DOSYALARI
+# ============================================================================
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# IMDB dataset
+imdb/
+*.csv
+*.json
+*.jsonl
+
+# Vector databases
+vector_db/
+*.faiss
+*.index
+chroma_db/
+
+# ============================================================================
+# PYTHON
+# ============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+llm_env/
+llmhafta*/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ============================================================================
+# JUPYTER NOTEBOOK
+# ============================================================================
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# ============================================================================
+# LOGS VE CACHE
+# ============================================================================
+logs/
+*.log
+wandb/
+mlruns/
+.cache/
+
+# TensorBoard
+runs/
+events.out.tfevents.*
+
+# ============================================================================
+# IDE VE EDITOR
+# ============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ============================================================================
+# EVALUATION RESULTS
+# ============================================================================
+evaluation/results/*
+!evaluation/results/.gitkeep
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# ============================================================================
+# TEMPORARY FILES
+# ============================================================================
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# ============================================================================
+# SECRETS VE CREDENTIALS
+# ============================================================================
+.env
+.env.local
+secrets.json
+credentials.json
+*.key

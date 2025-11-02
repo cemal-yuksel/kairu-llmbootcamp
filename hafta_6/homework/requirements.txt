@@ -1,0 +1,88 @@
+# ============================================================================
+# REQUIREMENTS - Intelligent Review Summarizer with Q&A
+# ============================================================================
+# Kurulum: pip install -r requirements.txt
+# ============================================================================
+
+# ============================================================================
+# CORE ML LIBRARIES
+# ============================================================================
+torch>=2.1.0                    # PyTorch - Derin öğrenme framework'ü
+transformers>=4.35.0            # Hugging Face Transformers
+datasets>=2.14.0                # Hugging Face Datasets
+peft>=0.6.0                     # Parameter Efficient Fine-Tuning (LoRA)
+accelerate>=0.24.0              # Distributed training ve inference
+bitsandbytes>=0.41.0            # 8-bit quantization
+
+# ============================================================================
+# VECTOR DATABASE VE EMBEDDINGS
+# ============================================================================
+faiss-cpu>=1.7.4                # FAISS vector search (CPU version)
+# faiss-gpu>=1.7.4              # FAISS GPU version (GPU varsa)
+sentence-transformers>=2.2.2    # Sentence embeddings
+chromadb>=0.4.15                # Alternative vector database
+
+# ============================================================================
+# NLP VE TEXT PROCESSING
+# ============================================================================
+nltk>=3.8.1                     # Natural Language Toolkit
+rouge-score>=0.1.2              # ROUGE metrics (summarization)
+bert-score>=0.3.13              # BERTScore metrics
+sacrebleu>=2.3.1                # BLEU score
+spacy>=3.7.0                    # Advanced NLP
+
+# ============================================================================
+# DATA PROCESSING
+# ============================================================================
+pandas>=2.1.0                   # Data manipulation
+numpy>=1.24.0                   # Numerical operations
+scikit-learn>=1.3.0             # ML utilities
+tqdm>=4.66.0                    # Progress bars
+
+# ============================================================================
+# VISUALIZATION VE UI
+# ============================================================================
+streamlit>=1.28.0               # Interactive web app
+plotly>=5.17.0                  # Interactive charts
+matplotlib>=3.8.0               # Static plotting
+seaborn>=0.13.0                 # Statistical visualization
+gradio>=4.0.0                   # Alternative UI framework
+
+# ============================================================================
+# API VE WEB
+# ============================================================================
+fastapi>=0.104.0                # REST API framework
+uvicorn>=0.24.0                 # ASGI server
+pydantic>=2.4.0                 # Data validation
+requests>=2.31.0                # HTTP requests
+
+# ============================================================================
+# UTILITIES
+# ============================================================================
+python-dotenv>=1.0.0            # Environment variables
+colorama>=0.4.6                 # Colored terminal output
+rich>=13.6.0                    # Beautiful terminal formatting
+click>=8.1.7                    # CLI interface
+
+# ============================================================================
+# TESTING VE QUALITY
+# ============================================================================
+pytest>=7.4.0                   # Testing framework
+pytest-cov>=4.1.0               # Coverage reports
+black>=23.10.0                  # Code formatter
+flake8>=6.1.0                   # Linting
+mypy>=1.6.0                     # Type checking
+
+# ============================================================================
+# LOGGING VE MONITORING
+# ============================================================================
+loguru>=0.7.2                   # Advanced logging
+tensorboard>=2.15.0             # Experiment tracking
+wandb>=0.16.0                   # Weights & Biases (optional)
+
+# ============================================================================
+# OPTIONAL DEPENDENCIES
+# ============================================================================
+# openai>=1.0.0                 # OpenAI API (benchmark için)
+# langchain>=0.0.330            # LangChain (advanced RAG)
+# ragas>=0.0.22                 # RAG evaluation metrics
