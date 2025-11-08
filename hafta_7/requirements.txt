@@ -1,0 +1,34 @@
+# LLM Tabanlı Uygulama Dağıtımı - Requirements
+# Backend, Frontend ve Deployment için gerekli paketler
+
+# Core Dependencies
+python-dotenv>=1.0.0
+pydantic>=2.0.0,<3.0.0
+
+# OpenAI API
+openai>=1.0.0,<2.0.0
+
+# Backend - FastAPI
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0,<3.0.0
+
+# Frontend - Gradio
+gradio>=4.0.0
+
+# Frontend - Streamlit
+streamlit>=1.28.0
+plotly>=5.17.0
+pandas>=2.0.0
+
+# HTTP Requests
+requests>=2.31.0
+httpx>=0.25.0
+
+# Utilities
+python-multipart>=0.0.6
+
+# PDF Processing
+PyPDF2>=3.0.0
+pdfplumber>=0.10.0
+
