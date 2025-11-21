@@ -1141,7 +1141,7 @@ Keskin kenarlı AI teknolojilerinin **akademik araştırmada pratik uygulamasın
 
 <div align="center">
 
-### This project was developed by **❤️ ile Geliştirildi - [Cemal YÜKSEL](https://github.com/cemal-yuksel)**
+### This project was developed with ❤️ by ** [Cemal YÜKSEL](https://github.com/cemal-yuksel)**
 
 *Empowering researchers with AI-driven insights*
 
