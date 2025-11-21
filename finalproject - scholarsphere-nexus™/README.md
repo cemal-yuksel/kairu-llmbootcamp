@@ -1141,14 +1141,14 @@ Keskin kenarlı AI teknolojilerinin **akademik araştırmada pratik uygulamasın
 
 <div align="center">
 
-### 🌟 **❤️ ile Geliştirildi - [Cemal YÜKSEL](https://github.com/cemakpolat)**
+### This project was developed by **❤️ ile Geliştirildi - [Cemal YÜKSEL](https://github.com/cemal-yuksel)**
 
-*Araştırmacıları AI odaklı içgörülerle güçlendirme*
+*Empowering researchers with AI-driven insights*
 
 **Faydalı buluyorsanız [⭐ bu projeyi yıldızlayın](https://github.com/cemakpolat/scholarsphere-nexus)!**
 
 ---
 
-*ScholarSphere Nexus™ - Akademik Mükemmellik AI İnovasyonu ile Buluşuyor*
+*ScholarSphere Nexus™ - Academic Excellence Meets AI Innovation*
 
 </div>
