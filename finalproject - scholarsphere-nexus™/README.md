@@ -842,8 +842,8 @@ const models = {
 
 ```bash
 # 1. Repository'yi klonla
-git clone https://github.com/cemakpolat/scholarsphere-nexus.git
-cd scholarsphere-nexus
+git clone https://github.com/cemal-yuksel/kairu-llmbootcamp.git
+cd "kairu-llmbootcamp/finalproject - scholarsphere-nexus™"
 
 # 2. Bağımlılıkları yükle
 npm install
@@ -1141,11 +1141,11 @@ Keskin kenarlı AI teknolojilerinin **akademik araştırmada pratik uygulamasın
 
 <div align="center">
 
-### This project was developed with ❤️ by ** [Cemal YÜKSEL](https://github.com/cemal-yuksel)**
+### This project was developed with ❤️ by [Cemal YÜKSEL](https://github.com/cemal-yuksel)
 
 *Empowering researchers with AI-driven insights*
 
-**Faydalı buluyorsanız [⭐ bu projeyi yıldızlayın](https://github.com/cemakpolat/scholarsphere-nexus)!**
+**Faydalı buluyorsanız [⭐ bu projeyi yıldızlayın](https://github.com/cemal-yuksel/kairu-llmbootcamp/tree/main/finalproject%20-%20scholarsphere-nexus%E2%84%A2)!**
 
 ---
 
